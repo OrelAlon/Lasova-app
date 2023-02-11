@@ -1,0 +1,28 @@
+// Setup
+@import './setup/variables';
+@import './setup/functions-mixins';
+@import './setup/typography';
+@import './setup/base';
+@import './setup/helpers';
+@import './setup/layout';
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@700&display=swap');
+
+// Components
+@import './components/Header';
+@import './components/Sidebar';
+@import './components/Table';
+@import './components/NewVolunteerModal';
+@import './components/ProfileVolunteerModal.scss';
+@import './components/UserMsg';
+@import './components/_NewGroup.scss';
+@import './components/volunteersHours.scss';
+@import './components/footer';
+@import './components/ReactTable';
+@import './components/InnerBox';
+@import './components/generalData_InnerBox';
+@import './components/StatusTabs';
+
+// Pages
+@import './pages/Home';
+@import './pages/volunteerLiveReport'

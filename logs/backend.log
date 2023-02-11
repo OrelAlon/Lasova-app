@@ -1,0 +1,649 @@
+3/12/2022, 2:55:58 PM - ERROR - failed to fetch volunteersSyntaxError: Unexpected token u in JSON at position 0 
+6/12/2022, 2:34:06 PM - ERROR - err while trying to add volunteer | SyntaxError: Unexpected token u in JSON at position 0 
+6/12/2022, 2:36:10 PM - ERROR - err while trying to add volunteer | SyntaxError: Unexpected token u in JSON at position 0 
+6/12/2022, 2:36:39 PM - ERROR - err while trying to add volunteer | SyntaxError: Unexpected token o in JSON at position 1 
+6/12/2022, 2:36:53 PM - ERROR - err while trying to add volunteer | SyntaxError: Unexpected token o in JSON at position 1 
+6/12/2022, 2:37:32 PM - ERROR - err while trying to add volunteer | SyntaxError: Unexpected token o in JSON at position 1 
+6/12/2022, 2:54:44 PM - ERROR - error updating volunteer undefined | CastError: Cast to date failed for value "16.08.89" (type string) at path "birth" 
+6/17/2022, 12:52:02 AM - ERROR - failed to fetch voluntterCastError: Cast to ObjectId failed for value "62ab5a992534d7878bcd17f" (type string) at path "_id" for model "Group" 
+6/17/2022, 12:52:23 AM - ERROR - failed to fetch voluntterCastError: Cast to ObjectId failed for value "62ab5a992534d7878bcd17" (type string) at path "_id" for model "Group" 
+6/17/2022, 12:52:53 AM - ERROR - failed to fetch volunteer CastError: Cast to ObjectId failed for value "62ab5a992534d7878bcd17" (type string) at path "_id" for model "Group" 
+6/17/2022, 1:16:06 AM - ERROR - error updating group undefined | CastError: Cast to ObjectId failed for value "62ab5a992534d7878bcd17f" (type string) at path "_id" for model "Group" 
+6/17/2022, 1:17:48 AM - ERROR - err while trying to add volunteer | SyntaxError: Unexpected token m in JSON at position 1 
+6/17/2022, 1:18:12 AM - ERROR - err while trying to add volunteer | SyntaxError: Unexpected token d in JSON at position 0 
+6/17/2022, 1:18:39 AM - ERROR - err while trying to add volunteer | SyntaxError: Unexpected token d in JSON at position 0 
+6/17/2022, 1:18:47 AM - ERROR - err while trying to add volunteer | SyntaxError: Unexpected token d in JSON at position 0 
+6/17/2022, 1:22:16 AM - ERROR - err while trying to add volunteer | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+6/17/2022, 1:23:27 AM - ERROR - err while trying to add volunteer | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+6/17/2022, 1:23:46 AM - ERROR - err while trying to add volunteer | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+6/17/2022, 1:24:37 AM - ERROR - err while trying to add volunteer | TypeError: Cannot read properties of undefined (reading 'startsWith') 
+22/06/2022, 3:38:14 - ERROR - failed to fetch groupsMongooseServerSelectionError: getaddrinfo ENOTFOUND ac-thrhdqd-shard-00-01.nnqvqex.mongodb.net 
+22/06/2022, 3:38:50 - ERROR - failed to fetch groupsMongooseServerSelectionError: getaddrinfo ENOTFOUND ac-thrhdqd-shard-00-01.nnqvqex.mongodb.net 
+22/06/2022, 4:09:22 - ERROR - err while trying to add volunteer | ReferenceError: body is not defined 
+22/06/2022, 4:10:12 - ERROR - err while trying to add volunteer | ReferenceError: body is not defined 
+22/06/2022, 4:11:03 - ERROR - err while trying to add volunteer | ReferenceError: body is not defined 
+22/06/2022, 4:12:24 - ERROR - err while trying to add volunteer | ReferenceError: body is not defined 
+22/06/2022, 4:21:45 - ERROR - err while trying to add volunteer | ReferenceError: body is not defined 
+22/06/2022, 4:23:48 - ERROR - err while trying to add volunteer | ReferenceError: body is not defined 
+22/06/2022, 19:26:26 - ERROR - err while trying to add volunteer | ReferenceError: body is not defined 
+22/06/2022, 19:38:12 - ERROR - err while trying to add volunteer | ReferenceError: body is not defined 
+22/06/2022, 19:51:40 - ERROR - err while trying to add volunteer | ReferenceError: body is not defined 
+22/06/2022, 19:53:31 - ERROR - err while trying to add volunteer | ReferenceError: body is not defined 
+22/06/2022, 19:55:46 - ERROR - err while trying to add volunteer | ReferenceError: body is not defined 
+22/06/2022, 19:56:44 - ERROR - err while trying to add volunteer | ReferenceError: body is not defined 
+22/06/2022, 19:57:56 - ERROR - err while trying to add volunteer | ReferenceError: body is not defined 
+22/06/2022, 19:59:23 - ERROR - err while trying to add volunteer | SyntaxError: Unexpected token o in JSON at position 1 
+7/18/2022, 9:47:50 PM - ERROR - err while trying to login user undefined | TypeError: user.checkPassword is not a function 
+7/30/2022, 4:04:15 PM - ERROR - err while trying to login user undefined | TypeError: user.checkPassword is not a function 
+7/30/2022, 4:11:55 PM - ERROR - err while trying to login user undefined | TypeError: Cannot read properties of null (reading 'checkPassword') 
+7/30/2022, 4:17:34 PM - ERROR - err while trying to login user undefined | TypeError: Cannot read properties of null (reading 'checkPassword') 
+7/30/2022, 4:44:07 PM - ERROR - err while trying to login user undefined | TypeError: user.checkPassword is not a function 
+7/30/2022, 4:49:20 PM - ERROR - err while trying to login user undefined | TypeError: user.checkPassword is not a function 
+7/30/2022, 4:59:08 PM - ERROR - err while trying to login user undefined | ReferenceError: username is not defined 
+7/30/2022, 5:04:59 PM - ERROR - err while trying to login user undefined | ReferenceError: username is not defined 
+7/30/2022, 5:06:39 PM - ERROR - err while trying to login user undefined | ReferenceError: jwtAccessToken is not defined 
+7/30/2022, 5:07:05 PM - ERROR - err while trying to login user undefined | Error: secretOrPrivateKey must have a value 
+7/30/2022, 5:07:42 PM - ERROR - err while trying to login user undefined | {} 
+7/30/2022, 5:08:00 PM - ERROR - err while trying to login user undefined | Error: secretOrPrivateKey must have a value 
+7/30/2022, 5:45:50 PM - ERROR - err while trying to login user undefined | RangeError: Maximum call stack size exceeded 
+7/30/2022, 5:45:52 PM - ERROR - err while trying to login user undefined | RangeError: Maximum call stack size exceeded 
+7/30/2022, 5:46:19 PM - ERROR - err while trying to login user undefined | RangeError: Maximum call stack size exceeded 
+7/30/2022, 5:46:27 PM - ERROR - err while trying to login user undefined | RangeError: Maximum call stack size exceeded 
+7/30/2022, 6:56:38 PM - ERROR - err while trying to login user undefined | TypeError: user.generateBearerAuthToken is not a function 
+7/30/2022, 7:13:02 PM - ERROR - Error trying to save user {
+  "email": "reemile1996@gmail.com",
+  "hash": "$2b$10$4Wwwg.mW/JeAjHBgcXuKYOn0QDODWwi4xdKJKGbWqFrYWpwY5cHaS"
+} | Error: username already exists 
+7/30/2022, 7:13:25 PM - ERROR - Error trying to save user {
+  "email": "reemile1996@gmail.com",
+  "hash": "$2b$10$4ifeWXuVct2VSQE1fG8N1uk.FCo2hMSsez7YxSrUgRRWrsbQxos1a"
+} | Error: username already exists 
+7/30/2022, 7:14:24 PM - ERROR - Error trying to save user {
+  "email": "reemile1996@gmail.com",
+  "hash": "$2b$10$YZPiMGASskoC.kIHg8OY1uG90g.FqET43iq49MlajE1ftDfWNfYJm"
+} | Error: username already exists 
+7/30/2022, 7:15:06 PM - ERROR - Error trying to save user {
+  "email": "reemile1996@gmail.com",
+  "hash": "$2b$10$Qu5im6QqhjAUtuZuXiLDmOohxN9u0MIRY6up0LBahS5.j9nQqkfhC"
+} | Error: username already exists 
+7/30/2022, 7:15:21 PM - ERROR - Error trying to save user {
+  "email": "reemile1996@gmail.com",
+  "hash": "$2b$10$jrF2bcjMEJxgDur31X0d..HfTC3m1aIifvgFKDrBBEMR9KRVPfwDO"
+} | Error: username already exists 
+7/30/2022, 7:15:32 PM - ERROR - Error trying to save user {
+  "email": "reemile1996@gmail.com",
+  "hash": "$2b$10$E./2PhovUx4YHmv0QWdNN.QFeYffavzOvPYkHwSi/saqAoFtk5tP."
+} | Error: username already exists 
+7/30/2022, 7:16:59 PM - ERROR - Error trying to save user {
+  "email": "reemile1996@gmail.com",
+  "hash": "$2b$10$R1HxJv.6gZChtB1lr/FsSOKQIa4GCRe6IbZxMSb9LEVNpxzvTzWye"
+} | Error: username already exists 
+7/30/2022, 7:16:59 PM - ERROR - err while trying to signup user reemile1996@gmail.com | Error: username already exists 
+7/30/2022, 7:17:20 PM - ERROR - Error trying to save user {
+  "email": "reemile1996@gmail.com",
+  "hash": "$2b$10$STmEFKJWrV78v/5knxiH5.S8CG6EQPIPf99Ot.mwQPP3vWTKjoXDa"
+} | Error: username already exists 
+7/30/2022, 7:17:20 PM - ERROR - err while trying to signup user reemile1996@gmail.com | Error: username already exists 
+7/30/2022, 7:23:26 PM - ERROR - Error trying to save user {
+  "email": "reemile1996@gmail.com",
+  "hash": "$2b$10$bur.kH01YJ2dk9E1FFo1iuJofDvkB.I.HpVHeKCh5Iq1njDQsLqfq"
+} | Error: 11 
+7/30/2022, 7:23:26 PM - ERROR - err while trying to signup user reemile1996@gmail.com | Error: 11 
+7/30/2022, 7:24:11 PM - ERROR - Error trying to save user {
+  "email": "reemile1996@gmail.com",
+  "hash": "$2b$10$RgSCtDi2Gxuflp2iBcQTK.wRns2qNIWvtQBJAGVCTUFAt/y5TS1Nm"
+} | Error: Unable to add user. User already exists 
+7/30/2022, 7:24:11 PM - ERROR - err while trying to signup user reemile1996@gmail.com | Error: Unable to add user. User already exists 
+7/30/2022, 7:30:07 PM - ERROR - Error trying to save user {
+  "email": "test123@gmail.com",
+  "hash": "$2b$10$WzV1OHGMJFB9i9K2pTUhVet03htB1.VNvHqacE74MRMRRCK4e3Jrm",
+  "_id": "62e55c8fe6070dc44c83fbad"
+} | ValidationError: userType: Path `userType` is required., lastname: Path `lastname` is required., firstname: Path `firstname` is required. 
+7/30/2022, 7:30:07 PM - ERROR - err while trying to signup user test123@gmail.com | ValidationError: userType: Path `userType` is required., lastname: Path `lastname` is required., firstname: Path `firstname` is required. 
+7/30/2022, 7:30:56 PM - ERROR - Error trying to save user {
+  "firstname": "Reem",
+  "lastname": "Ben-David",
+  "email": "test123@gmail.com",
+  "hash": "$2b$10$BtiEbm2xJB34Xe0AB3w55.VtnQTz.yBO3Dr7EPAjHQ/ki2uUO6TBi",
+  "_id": "62e55cc0fa280bdacadc178c"
+} | ValidationError: userType: Path `userType` is required. 
+7/30/2022, 7:30:56 PM - ERROR - err while trying to signup user test123@gmail.com | ValidationError: userType: Path `userType` is required. 
+7/30/2022, 7:33:37 PM - ERROR - Error trying to save user {
+  "firstname": "Testosteertost",
+  "lastname": "Halo",
+  "email": "test123@gmail.com",
+  "userType": "0",
+  "hash": "$2b$10$/vbiaVADsB4I4wD4APF0wOCCxc0.epYst81wR0uMm6IxJc8KyYDl."
+} | Error: Unable to add user. User already exists 
+7/30/2022, 7:33:37 PM - ERROR - err while trying to signup user test123@gmail.com | Error: Unable to add user. User already exists 
+7/30/2022, 7:33:48 PM - ERROR - Error trying to save user {
+  "firstname": "Testosteertost",
+  "lastname": "Halo",
+  "email": "test123@gmail.com",
+  "userType": "0",
+  "hash": "$2b$10$XU89IE5SIobkhldHd1/H/.v1dHc/dXGFC1u/nB99hhv2XrZ8JQOge"
+} | Error: Unable to add user. User already exists 
+7/30/2022, 7:33:48 PM - ERROR - err while trying to signup user test123@gmail.com | Error: Unable to add user. User already exists 
+7/30/2022, 7:34:04 PM - ERROR - Error trying to save user {
+  "firstname": "Testosteertost",
+  "lastname": "Halo",
+  "email": "test123@gmail.com",
+  "userType": "0",
+  "hash": "$2b$10$ozIJoMMoMphvkcaOOoiTuOB0NxS7BIgEVDFpWnupD85QEUFAKx.w."
+} | Error: Unable to add user. User already exists 
+7/30/2022, 7:34:04 PM - ERROR - err while trying to signup user test123@gmail.com | Error: Unable to add user. User already exists 
+7/30/2022, 7:34:18 PM - ERROR - Error trying to save user {
+  "firstname": "Testosteertost",
+  "lastname": "Halo",
+  "email": "test123@gmail.com",
+  "userType": "0",
+  "hash": "$2b$10$Fdq3xPrqmd2zKIDeA.s39ebr4Aa4KApHmhawUD4w4/q349lg5U8vG"
+} | Error: Unable to add user. User already exists 
+7/30/2022, 7:34:18 PM - ERROR - err while trying to signup user test123@gmail.com | Error: Unable to add user. User already exists 
+7/30/2022, 7:34:31 PM - ERROR - Error trying to save user {
+  "firstname": "Testosteertost",
+  "lastname": "Halo",
+  "email": "test123@gmail.com",
+  "userType": "0",
+  "hash": "$2b$10$Ixid/.kQK7Vu.8478HNQJO2NATMwTMsodd5GT7mEBgpgX9LbqdFby"
+} | Error: Unable to add user. User already exists 
+7/30/2022, 7:34:31 PM - ERROR - err while trying to signup user test123@gmail.com | Error: Unable to add user. User already exists 
+7/30/2022, 7:40:33 PM - ERROR - Error trying to save user {
+  "firstname": "Reem",
+  "lastname": "Ben-David",
+  "email": "test123@gmail.com",
+  "hash": "$2b$10$MjWNaBFiev23TNBLVby8eusszNpml5yU/O7Cd0SkyB45qUuoOXq9W"
+} | Error: Unable to add user. User already exists 
+7/30/2022, 7:40:33 PM - ERROR - err while trying to signup user test123@gmail.com | Error: Unable to add user. User already exists 
+7/30/2022, 7:40:48 PM - ERROR - Error trying to save user {
+  "firstname": "Reem",
+  "lastname": "Ben-David",
+  "email": "tes234t123@gmail.com",
+  "hash": "$2b$10$n7qevoIZyoo0dGi.2FT2A.38NJzscafGV4r9Ecwo0StOFpgndGqDK",
+  "_id": "62e55f10e41979fdf1d7fe1c"
+} | ValidationError: userType: Path `userType` is required. 
+7/30/2022, 7:40:48 PM - ERROR - err while trying to signup user tes234t123@gmail.com | ValidationError: userType: Path `userType` is required. 
+7/30/2022, 7:41:27 PM - ERROR - Error trying to save user {
+  "firstname": "Testosteertost",
+  "lastname": "Halo",
+  "email": "test123@gmail.com",
+  "userType": "0",
+  "hash": "$2b$10$ODPrL45QS3ZWSGEwqXyX.OR69yOdjJAABhgGbt2G7Kc/MTxBBblgq"
+} | Error: Unable to add user. User already exists 
+7/30/2022, 7:41:27 PM - ERROR - err while trying to signup user test123@gmail.com | Error: Unable to add user. User already exists 
+8/15/2022, 7:43:23 PM - ERROR - err while trying to login user undefined | TypeError: Cannot read properties of null (reading 'checkPassword') 
+8/15/2022, 7:51:52 PM - ERROR - err while trying to login user undefined | TypeError: Cannot read properties of null (reading 'checkPassword') 
+8/22/2022, 8:35:36 PM - ERROR - err while trying to login user undefined | TypeError: Cannot read properties of null (reading 'checkPassword') 
+8/30/2022, 8:58:29 PM - ERROR - error while trying to login user undefined | Error: Invalid username / email 
+8/30/2022, 8:58:31 PM - ERROR - error while trying to login user undefined | Error: Invalid username / email 
+10/21/2022, 6:12:06 PM - ERROR - error while trying to login user undefined | Error: Invalid username / email 
+10/21/2022, 6:12:09 PM - ERROR - error while trying to login user undefined | Error: Invalid username / email 
+10/28/2022, 4:33:53 PM - ERROR - error while trying to login user undefined | Error: Invalid username / email 
+10/28/2022, 4:33:54 PM - ERROR - error while trying to login user undefined | Error: Invalid username / email 
+10/28/2022, 4:36:33 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+10/30/2022, 3:56:27 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+10/30/2022, 3:56:54 PM - ERROR - error while trying to login user undefined | Error: Invalid username / email 
+10/30/2022, 3:57:02 PM - ERROR - error while trying to login user undefined | Error: Invalid username / email 
+10/30/2022, 3:57:03 PM - ERROR - error while trying to login user undefined | Error: Invalid username / email 
+10/30/2022, 3:57:05 PM - ERROR - error while trying to login user undefined | Error: Invalid username / email 
+10/30/2022, 3:57:05 PM - ERROR - error while trying to login user undefined | Error: Invalid username / email 
+10/30/2022, 3:57:31 PM - ERROR - error while trying to login user undefined | Error: Invalid username / email 
+10/30/2022, 3:57:33 PM - ERROR - error while trying to login user undefined | Error: Invalid username / email 
+10/30/2022, 3:57:45 PM - ERROR - error while trying to login user undefined | Error: Invalid username / email 
+10/30/2022, 3:57:48 PM - ERROR - error while trying to login user undefined | Error: Invalid username / email 
+10/30/2022, 3:59:14 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+10/30/2022, 3:59:59 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+10/30/2022, 4:01:32 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+10/30/2022, 4:04:16 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+10/30/2022, 4:07:54 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+10/30/2022, 4:13:31 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+10/30/2022, 4:14:27 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+10/30/2022, 4:21:00 PM - ERROR - error updating volunteer undefined | TypeError: Cannot read properties of undefined (reading '0') 
+10/30/2022, 4:21:39 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+10/30/2022, 4:23:37 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+10/30/2022, 4:26:53 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+10/30/2022, 4:28:41 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+10/30/2022, 5:02:19 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+10/30/2022, 5:07:34 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+10/30/2022, 5:10:28 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+10/30/2022, 5:10:54 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+10/30/2022, 5:13:11 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+10/30/2022, 5:13:34 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+10/30/2022, 5:21:04 PM - ERROR - error updating volunteer undefined | ReferenceError: hours is not defined 
+10/30/2022, 5:29:37 PM - ERROR - error updating volunteer undefined | ReferenceError: hours is not defined 
+10/30/2022, 5:31:14 PM - ERROR - error updating volunteer undefined | ReferenceError: hours is not defined 
+10/30/2022, 5:39:13 PM - ERROR - error updating volunteer undefined | ReferenceError: hours is not defined 
+10/30/2022, 5:52:36 PM - ERROR - error updating volunteer undefined | ReferenceError: hours is not defined 
+10/30/2022, 5:57:57 PM - ERROR - error updating volunteer undefined | ReferenceError: hours is not defined 
+10/30/2022, 6:01:39 PM - ERROR - error updating volunteer undefined | ReferenceError: hours is not defined 
+10/30/2022, 6:02:04 PM - ERROR - error updating volunteer undefined | ReferenceError: hours is not defined 
+10/30/2022, 6:06:32 PM - ERROR - error updating volunteer undefined | ReferenceError: hours is not defined 
+10/30/2022, 6:14:17 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+10/30/2022, 6:14:51 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+10/30/2022, 6:20:55 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+10/30/2022, 6:42:15 PM - ERROR - error updating volunteer undefined | TypeError: key.map is not a function 
+10/30/2022, 6:44:21 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+10/30/2022, 6:44:43 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+10/30/2022, 6:45:53 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+10/30/2022, 6:49:27 PM - ERROR - error updating volunteer undefined | TypeError: Cannot read properties of undefined (reading 'verified') 
+10/30/2022, 6:49:33 PM - ERROR - error updating volunteer undefined | TypeError: Cannot read properties of undefined (reading 'verified') 
+10/30/2022, 6:50:42 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+10/30/2022, 6:51:23 PM - ERROR - error updating volunteer undefined | TypeError: Cannot read properties of undefined (reading 'verified') 
+10/30/2022, 6:52:11 PM - ERROR - error updating volunteer undefined | TypeError: Cannot read properties of undefined (reading 'verified') 
+10/30/2022, 6:56:33 PM - ERROR - error updating volunteer undefined | TypeError: Cannot read properties of undefined (reading 'verified') 
+10/30/2022, 6:58:06 PM - ERROR - error updating volunteer undefined | TypeError: Cannot read properties of undefined (reading 'verified') 
+10/30/2022, 7:05:31 PM - ERROR - error updating volunteer undefined | TypeError: Cannot read properties of undefined (reading 'verified') 
+10/30/2022, 7:06:33 PM - ERROR - error updating volunteer undefined | TypeError: Cannot read properties of undefined (reading 'verified') 
+10/30/2022, 7:07:41 PM - ERROR - error updating volunteer undefined | TypeError: Cannot read properties of undefined (reading 'verified') 
+10/30/2022, 7:08:41 PM - ERROR - error updating volunteer undefined | TypeError: Cannot read properties of undefined (reading 'verified') 
+10/30/2022, 7:14:05 PM - ERROR - error updating volunteer undefined | TypeError: Cannot read properties of undefined (reading 'verified') 
+10/30/2022, 7:15:02 PM - ERROR - error updating volunteer undefined | TypeError: Cannot read properties of undefined (reading 'verified') 
+10/30/2022, 7:33:24 PM - ERROR - error updating volunteer undefined | TypeError: Cannot read properties of undefined (reading 'verified') 
+10/30/2022, 7:40:56 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+10/30/2022, 7:41:30 PM - ERROR - error updating volunteer undefined | TypeError: Cannot read properties of undefined (reading 'date') 
+10/30/2022, 7:46:08 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+10/30/2022, 7:47:28 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+10/30/2022, 7:48:08 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+11/10/2022, 6:01:11 PM - ERROR - error updating volunteer undefined | ReferenceError: currentUser is not defined 
+11/10/2022, 6:09:30 PM - ERROR - error while trying to login user undefined | Error: Invalid username / email 
+11/10/2022, 6:09:32 PM - ERROR - error while trying to login user undefined | Error: Invalid username / email 
+11/10/2022, 6:11:37 PM - ERROR - error while trying to login user undefined | Error: Invalid username / email 
+11/10/2022, 6:12:49 PM - ERROR - error while trying to login user undefined | Error: Invalid username / email 
+11/10/2022, 6:17:56 PM - ERROR - error while trying to login user undefined | Error: Invalid username / email 
+11/10/2022, 7:02:02 PM - ERROR - error updating volunteer undefined | TypeError: Cannot read properties of undefined (reading 'userType') 
+11/10/2022, 7:09:44 PM - ERROR - error updating volunteer undefined | TypeError: Cannot read properties of undefined (reading 'email') 
+11/10/2022, 7:11:01 PM - ERROR - error updating volunteer undefined | TypeError: Cannot read properties of undefined (reading 'userType') 
+11/10/2022, 7:26:58 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+11/10/2022, 7:53:03 PM - ERROR - error updating volunteer undefined | TypeError: Cannot read properties of undefined (reading 'forEach') 
+11/10/2022, 7:54:22 PM - ERROR - error updating volunteer undefined | TypeError: Cannot read properties of undefined (reading 'map') 
+11/10/2022, 8:01:54 PM - ERROR - error updating volunteer undefined | TypeError: Cannot read properties of undefined (reading 'map') 
+11/10/2022, 8:13:35 PM - ERROR - error updating volunteer undefined | TypeError: Cannot convert undefined or null to object 
+11/10/2022, 8:14:48 PM - ERROR - error updating volunteer undefined | TypeError: Cannot read properties of undefined (reading 'forEach') 
+11/10/2022, 8:16:02 PM - ERROR - error updating volunteer undefined | TypeError: Cannot convert undefined or null to object 
+11/10/2022, 8:19:51 PM - ERROR - error updating volunteer undefined | ReferenceError: volunteerInHisProgram is not defined 
+11/13/2022, 4:19:17 PM - ERROR - error updating volunteer undefined | ReferenceError: volunteerInHisProgram is not defined 
+11/13/2022, 4:23:33 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+11/13/2022, 4:41:06 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+11/13/2022, 4:41:39 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+11/13/2022, 4:42:28 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+11/13/2022, 5:00:17 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+11/27/2022, 10:44:10 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+11/27/2022, 10:44:11 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+11/27/2022, 10:44:11 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+11/27/2022, 10:45:22 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+11/27/2022, 10:51:51 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+11/27/2022, 11:01:21 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+11/27/2022, 11:04:21 PM - ERROR - error while trying to login user testSignupRequest@gmail.com | Error: Invalid username / email 
+11/27/2022, 11:08:58 PM - ERROR - Error while trying to find user by criteria {
+  "email": "testSignupRequest@gmail.com"
+} | MongooseError: Operation `users.findOne()` buffering timed out after 10000ms 
+11/27/2022, 11:08:58 PM - ERROR - error while trying to login user testSignupRequest@gmail.com | MongooseError: Operation `users.findOne()` buffering timed out after 10000ms 
+11/27/2022, 11:09:06 PM - ERROR - Error while trying to find user by criteria {
+  "email": "testSignupRequest@gmail.com"
+} | MongooseError: Operation `users.findOne()` buffering timed out after 10000ms 
+11/27/2022, 11:09:06 PM - ERROR - error while trying to login user testSignupRequest@gmail.com | MongooseError: Operation `users.findOne()` buffering timed out after 10000ms 
+11/27/2022, 11:09:09 PM - ERROR - Error while trying to find user by criteria {
+  "email": "testSignupRequest@gmail.com"
+} | MongooseError: Operation `users.findOne()` buffering timed out after 10000ms 
+11/27/2022, 11:09:09 PM - ERROR - error while trying to login user testSignupRequest@gmail.com | MongooseError: Operation `users.findOne()` buffering timed out after 10000ms 
+11/27/2022, 11:09:10 PM - ERROR - Error while trying to find user by criteria {
+  "email": "testSignupRequest@gmail.com"
+} | MongooseError: Operation `users.findOne()` buffering timed out after 10000ms 
+11/27/2022, 11:09:10 PM - ERROR - error while trying to login user testSignupRequest@gmail.com | MongooseError: Operation `users.findOne()` buffering timed out after 10000ms 
+11/27/2022, 11:09:10 PM - ERROR - Error while trying to find user by criteria {
+  "email": "testSignupRequest@gmail.com"
+} | MongooseError: Operation `users.findOne()` buffering timed out after 10000ms 
+11/27/2022, 11:09:10 PM - ERROR - error while trying to login user testSignupRequest@gmail.com | MongooseError: Operation `users.findOne()` buffering timed out after 10000ms 
+11/27/2022, 11:09:10 PM - ERROR - Error while trying to find user by criteria {
+  "email": "testSignupRequest@gmail.com"
+} | MongooseError: Operation `users.findOne()` buffering timed out after 10000ms 
+11/27/2022, 11:09:10 PM - ERROR - error while trying to login user testSignupRequest@gmail.com | MongooseError: Operation `users.findOne()` buffering timed out after 10000ms 
+11/27/2022, 11:09:15 PM - ERROR - Error while trying to find user by criteria {
+  "email": "testSignupRequest@gmail.com"
+} | MongooseError: Operation `users.findOne()` buffering timed out after 10000ms 
+11/27/2022, 11:09:15 PM - ERROR - error while trying to login user testSignupRequest@gmail.com | MongooseError: Operation `users.findOne()` buffering timed out after 10000ms 
+11/27/2022, 11:24:43 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+11/27/2022, 11:25:34 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+12/6/2022, 12:57:12 PM - ERROR - error while trying to login user testSignupRequest@gmail.com | Error: Invalid username / email 
+12/6/2022, 12:57:19 PM - ERROR - error while trying to login user testSignupRequest@gmail.com | Error: Invalid username / email 
+12/6/2022, 1:28:48 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+12/6/2022, 1:29:15 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+12/6/2022, 1:36:35 PM - ERROR - error while trying to login user sanfasisko@kadimanoar.org | Error: Invalid username / email 
+12/6/2022, 1:38:21 PM - ERROR - error while trying to login user eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjUwODgzMzQyLCJpYXQiOjE2NTA4ODMxODAsImp0aSI6IjE3ZTE0ZTJjYzczZjQ3ZTY4MGE5MjMxNzQ0YmE1Y2E4IiwidXNlcl9pZCI6N30.BSttya-hevIU1GaZi7VbHzGSnHNwlQOTGOcqd9TOBHM | Error: Invalid username / email 
+12/6/2022, 1:39:46 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+12/6/2022, 1:43:26 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+12/6/2022, 1:45:02 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+12/6/2022, 1:46:12 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+12/6/2022, 1:47:48 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+12/6/2022, 1:48:42 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+12/6/2022, 1:49:40 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+12/6/2022, 1:50:55 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+12/6/2022, 1:51:43 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+12/6/2022, 1:53:41 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+12/6/2022, 1:58:08 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+10.12.2022, 22:43:35 - ERROR - Error while trying to find user by criteria {
+  "email": "testSignupRequest@gmail.com"
+} | MongooseServerSelectionError: getaddrinfo ENOTFOUND ac-thrhdqd-shard-00-00.nnqvqex.mongodb.net 
+10.12.2022, 22:43:35 - ERROR - error while trying to login user testSignupRequest@gmail.com | MongooseServerSelectionError: getaddrinfo ENOTFOUND ac-thrhdqd-shard-00-00.nnqvqex.mongodb.net 
+11.12.2022, 0:00:49 - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+11.12.2022, 0:34:35 - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+11.12.2022, 0:36:04 - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+11.12.2022, 0:37:19 - ERROR - failed to fetch voluntterMongooseError: Operation `volunteers.findOne()` buffering timed out after 10000ms 
+11.12.2022, 0:37:23 - ERROR - failed to fetch voluntterMongooseError: Operation `volunteers.findOne()` buffering timed out after 10000ms 
+11.12.2022, 0:40:30 - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+11.12.2022, 0:42:25 - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+11.12.2022, 0:43:06 - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+11.12.2022, 0:46:21 - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+11.12.2022, 0:47:16 - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+11.12.2022, 0:51:00 - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+11.12.2022, 0:58:42 - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+11.12.2022, 1:00:50 - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+11.12.2022, 1:09:17 - ERROR - failed to fetch voluntterMongooseError: Operation `volunteers.findOne()` buffering timed out after 10000ms 
+11.12.2022, 1:09:20 - ERROR - failed to fetch voluntterMongooseError: Operation `volunteers.findOne()` buffering timed out after 10000ms 
+11.12.2022, 1:10:01 - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+11.12.2022, 1:11:15 - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+11.12.2022, 1:13:22 - ERROR - failed to fetch voluntterMongooseError: Operation `volunteers.findOne()` buffering timed out after 10000ms 
+11.12.2022, 1:13:34 - ERROR - failed to fetch voluntterMongooseError: Operation `volunteers.findOne()` buffering timed out after 10000ms 
+11.12.2022, 1:14:20 - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+11.12.2022, 1:16:29 - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+11.12.2022, 1:21:52 - ERROR - failed to fetch voluntterMongooseError: Operation `volunteers.findOne()` buffering timed out after 10000ms 
+15.12.2022, 20:47:52 - ERROR - failed to fetch volunteersMongooseServerSelectionError: getaddrinfo ENOTFOUND ac-thrhdqd-shard-00-01.nnqvqex.mongodb.net 
+22.12.2022, 21:42:32 - ERROR - Error while trying to find user by criteria {
+  "email": "testSignupRequest@gmail.com"
+} | MongooseError: Operation `users.findOne()` buffering timed out after 10000ms 
+22.12.2022, 21:42:32 - ERROR - error while trying to login user testSignupRequest@gmail.com | MongooseError: Operation `users.findOne()` buffering timed out after 10000ms 
+26.12.2022, 20:44:56 - ERROR - Error while trying to find user by criteria {
+  "email": "community@lasova.org.il"
+} | MongooseServerSelectionError: getaddrinfo ENOTFOUND ac-thrhdqd-shard-00-00.nnqvqex.mongodb.net 
+26.12.2022, 20:44:56 - ERROR - error while trying to login user community@lasova.org.il | MongooseServerSelectionError: getaddrinfo ENOTFOUND ac-thrhdqd-shard-00-00.nnqvqex.mongodb.net 
+26.12.2022, 20:45:03 - ERROR - Error while trying to find user by criteria {
+  "email": "community@lasova.org.il"
+} | MongooseServerSelectionError: getaddrinfo ENOTFOUND ac-thrhdqd-shard-00-00.nnqvqex.mongodb.net 
+26.12.2022, 20:45:03 - ERROR - error while trying to login user community@lasova.org.il | MongooseServerSelectionError: getaddrinfo ENOTFOUND ac-thrhdqd-shard-00-00.nnqvqex.mongodb.net 
+26.12.2022, 20:45:03 - ERROR - Error while trying to find user by criteria {
+  "email": "community@lasova.org.il"
+} | MongooseServerSelectionError: getaddrinfo ENOTFOUND ac-thrhdqd-shard-00-00.nnqvqex.mongodb.net 
+26.12.2022, 20:45:03 - ERROR - error while trying to login user community@lasova.org.il | MongooseServerSelectionError: getaddrinfo ENOTFOUND ac-thrhdqd-shard-00-00.nnqvqex.mongodb.net 
+26.12.2022, 20:45:04 - ERROR - Error while trying to find user by criteria {
+  "email": "community@lasova.org.il"
+} | MongooseServerSelectionError: getaddrinfo ENOTFOUND ac-thrhdqd-shard-00-00.nnqvqex.mongodb.net 
+26.12.2022, 20:45:04 - ERROR - error while trying to login user community@lasova.org.il | MongooseServerSelectionError: getaddrinfo ENOTFOUND ac-thrhdqd-shard-00-00.nnqvqex.mongodb.net 
+26.12.2022, 20:45:05 - ERROR - Error while trying to find user by criteria {
+  "email": "community@lasova.org.il"
+} | MongooseServerSelectionError: getaddrinfo ENOTFOUND ac-thrhdqd-shard-00-00.nnqvqex.mongodb.net 
+26.12.2022, 20:45:05 - ERROR - error while trying to login user community@lasova.org.il | MongooseServerSelectionError: getaddrinfo ENOTFOUND ac-thrhdqd-shard-00-00.nnqvqex.mongodb.net 
+26.12.2022, 20:45:06 - ERROR - Error while trying to find user by criteria {
+  "email": "community@lasova.org.il"
+} | MongooseServerSelectionError: getaddrinfo ENOTFOUND ac-thrhdqd-shard-00-00.nnqvqex.mongodb.net 
+26.12.2022, 20:45:06 - ERROR - error while trying to login user community@lasova.org.il | MongooseServerSelectionError: getaddrinfo ENOTFOUND ac-thrhdqd-shard-00-00.nnqvqex.mongodb.net 
+27.12.2022, 22:35:43 - ERROR - failed to fetch volunteersMongooseServerSelectionError: getaddrinfo ENOTFOUND ac-thrhdqd-shard-00-02.nnqvqex.mongodb.net 
+27.12.2022, 22:35:51 - ERROR - failed to fetch groupsMongooseServerSelectionError: getaddrinfo ENOTFOUND ac-thrhdqd-shard-00-02.nnqvqex.mongodb.net 
+27.12.2022, 22:36:13 - ERROR - failed to fetch volunteersMongooseServerSelectionError: getaddrinfo ENOTFOUND ac-thrhdqd-shard-00-02.nnqvqex.mongodb.net 
+27.12.2022, 22:36:43 - ERROR - Error while trying to find user by criteria {
+  "email": "community@lasova.org.il"
+} | MongooseServerSelectionError: getaddrinfo ENOTFOUND ac-thrhdqd-shard-00-02.nnqvqex.mongodb.net 
+27.12.2022, 22:36:43 - ERROR - error while trying to login user community@lasova.org.il | MongooseServerSelectionError: getaddrinfo ENOTFOUND ac-thrhdqd-shard-00-02.nnqvqex.mongodb.net 
+27.12.2022, 22:36:46 - ERROR - Error while trying to find user by criteria {
+  "email": "community@lasova.org.il"
+} | MongooseServerSelectionError: getaddrinfo ENOTFOUND ac-thrhdqd-shard-00-02.nnqvqex.mongodb.net 
+27.12.2022, 22:36:46 - ERROR - error while trying to login user community@lasova.org.il | MongooseServerSelectionError: getaddrinfo ENOTFOUND ac-thrhdqd-shard-00-02.nnqvqex.mongodb.net 
+27.12.2022, 22:36:47 - ERROR - Error while trying to find user by criteria {
+  "email": "community@lasova.org.il"
+} | MongooseServerSelectionError: getaddrinfo ENOTFOUND ac-thrhdqd-shard-00-02.nnqvqex.mongodb.net 
+27.12.2022, 22:36:47 - ERROR - error while trying to login user community@lasova.org.il | MongooseServerSelectionError: getaddrinfo ENOTFOUND ac-thrhdqd-shard-00-02.nnqvqex.mongodb.net 
+27.12.2022, 22:48:00 - ERROR - failed to fetch volunteersMongooseServerSelectionError: connection <monitor> to 34.242.51.231:27017 closed 
+27.12.2022, 22:48:43 - ERROR - failed to fetch volunteersMongooseServerSelectionError: getaddrinfo ENOTFOUND ac-thrhdqd-shard-00-00.nnqvqex.mongodb.net 
+27.12.2022, 22:59:27 - ERROR - failed to fetch volunteersMongooseServerSelectionError: getaddrinfo ENOTFOUND ac-thrhdqd-shard-00-00.nnqvqex.mongodb.net 
+27.12.2022, 22:59:29 - ERROR - Error while trying to find user by criteria {
+  "email": "community@lasova.org.il"
+} | MongooseServerSelectionError: getaddrinfo ENOTFOUND ac-thrhdqd-shard-00-00.nnqvqex.mongodb.net 
+27.12.2022, 22:59:29 - ERROR - error while trying to login user community@lasova.org.il | MongooseServerSelectionError: getaddrinfo ENOTFOUND ac-thrhdqd-shard-00-00.nnqvqex.mongodb.net 
+27.12.2022, 22:59:48 - ERROR - failed to fetch voluntterMongooseServerSelectionError: connection timed out 
+27.12.2022, 23:00:25 - ERROR - Error while trying to find user by criteria {
+  "email": "testSignupRequest@gmail.com"
+} | MongooseError: Operation `users.findOne()` buffering timed out after 10000ms 
+27.12.2022, 23:00:25 - ERROR - error while trying to login user testSignupRequest@gmail.com | MongooseError: Operation `users.findOne()` buffering timed out after 10000ms 
+27.12.2022, 23:00:30 - ERROR - Error while trying to find user by criteria {
+  "email": "testSignupRequest@gmail.com"
+} | MongooseError: Operation `users.findOne()` buffering timed out after 10000ms 
+27.12.2022, 23:00:30 - ERROR - error while trying to login user testSignupRequest@gmail.com | MongooseError: Operation `users.findOne()` buffering timed out after 10000ms 
+27.12.2022, 23:00:34 - ERROR - Error while trying to find user by criteria {
+  "email": "community@lasova.org.il"
+} | MongooseError: Operation `users.findOne()` buffering timed out after 10000ms 
+27.12.2022, 23:00:34 - ERROR - error while trying to login user community@lasova.org.il | MongooseError: Operation `users.findOne()` buffering timed out after 10000ms 
+27.12.2022, 23:01:40 - ERROR - failed to fetch voluntterCastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Volunteer" 
+27.12.2022, 23:02:40 - ERROR - failed to fetch voluntterCastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Volunteer" 
+27.12.2022, 23:05:42 - ERROR - failed to fetch voluntterCastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Volunteer" 
+27.12.2022, 23:06:47 - ERROR - Error while trying to find user by criteria {
+  "email": "community@lasova.org.il"
+} | MongooseServerSelectionError: getaddrinfo ENOTFOUND ac-thrhdqd-shard-00-00.nnqvqex.mongodb.net 
+27.12.2022, 23:06:47 - ERROR - error while trying to login user community@lasova.org.il | MongooseServerSelectionError: getaddrinfo ENOTFOUND ac-thrhdqd-shard-00-00.nnqvqex.mongodb.net 
+27.12.2022, 23:07:11 - ERROR - failed to fetch voluntterCastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Volunteer" 
+27.12.2022, 23:13:08 - ERROR - failed to fetch volunteersMongooseServerSelectionError: getaddrinfo ENOTFOUND ac-thrhdqd-shard-00-00.nnqvqex.mongodb.net 
+27.12.2022, 23:34:11 - ERROR - failed to fetch voluntterCastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Volunteer" 
+27.12.2022, 23:47:44 - ERROR - failed to fetch voluntterCastError: Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Volunteer" 
+27.12.2022, 23:51:22 - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+27.12.2022, 23:53:16 - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+27.12.2022, 23:54:12 - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+27.12.2022, 23:55:51 - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+28.12.2022, 0:01:50 - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+28.12.2022, 0:06:21 - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+28.12.2022, 0:07:27 - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+28.12.2022, 0:15:58 - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+28.12.2022, 0:20:08 - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+28.12.2022, 0:26:51 - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+28.12.2022, 21:33:20 - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+28.12.2022, 22:10:35 - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+28.12.2022, 22:13:48 - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+28.12.2022, 22:23:37 - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+28.12.2022, 22:25:29 - ERROR - error updating volunteer 62a5c9a42071b52f89b35c8a | Error: User dont have permission for this action 
+28.12.2022, 22:42:04 - ERROR - error updating volunteer 62a5c9a42071b52f89b35c86 | Error: User dont have permission for this action 
+28.12.2022, 23:16:26 - ERROR - error updating volunteer 62a5c9a42071b52f89b35c86 | Error: User dont have permission for this action 
+30.12.2022, 12:43:13 - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+30.12.2022, 13:06:34 - ERROR - error updating volunteer 62a5c9a42071b52f89b35c86 | Error: User dont have permission for this action 
+30.12.2022, 13:09:53 - ERROR - error updating volunteer 62a5c9a42071b52f89b35c86 | Error: User dont have permission for this action 
+30.12.2022, 13:11:18 - ERROR - error updating volunteer 62a5c9a42071b52f89b35c86 | Error: User dont have permission for this action 
+30.12.2022, 13:15:08 - ERROR - error updating volunteer 62a5c9a42071b52f89b35c8a | Error: User dont have permission for this action 
+30.12.2022, 13:16:32 - ERROR - error updating volunteer 62a5c9a42071b52f89b35c8c | Error: User dont have permission for this action 
+30.12.2022, 13:24:16 - ERROR - error updating volunteer 62a5c9a42071b52f89b35c86 | Error: User dont have permission for this action 
+1/4/2023, 12:05:58 PM - ERROR - error updating volunteer 62a5c9a42071b52f89b35c82 | Error: User dont have permission for this action 
+1/4/2023, 12:14:56 PM - ERROR - error updating volunteer 62a5c9a42071b52f89b35c82 | Error: User dont have permission for this action 
+1/4/2023, 1:00:01 PM - ERROR - error updating volunteer 62a5c9a42071b52f89b35c82 | Error: User dont have permission for this action 
+1/4/2023, 1:09:15 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/4/2023, 1:09:22 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/4/2023, 1:58:48 PM - ERROR - error updating volunteer 62a5c9a42071b52f89b35c82 | Error: User dont have permission for this action 
+1/4/2023, 2:01:37 PM - ERROR - error updating volunteer 62a5c9a42071b52f89b35c82 | Error: User dont have permission for this action 
+1/4/2023, 2:01:52 PM - ERROR - error updating volunteer 62a5c9a42071b52f89b35c82 | Error: User dont have permission for this action 
+1/4/2023, 2:12:07 PM - ERROR - error updating volunteer 62a5c9a42071b52f89b35c82 | Error: User dont have permission for this action 
+1/4/2023, 2:29:05 PM - ERROR - error updating volunteer 62a5c9a42071b52f89b35c82 | Error: User dont have permission for this action 
+1/4/2023, 2:29:57 PM - ERROR - error updating volunteer 62a5c9a42071b52f89b35c82 | Error: User dont have permission for this action 
+1/4/2023, 2:40:43 PM - ERROR - error updating volunteer 62a5c9a42071b52f89b35c82 | Error: User dont have permission for this action 
+1/4/2023, 2:42:12 PM - ERROR - error updating volunteer 62a5c9a42071b52f89b35c82 | Error: User dont have permission for this action 
+1/4/2023, 2:43:56 PM - ERROR - error updating volunteer 62a5c9a42071b52f89b35c82 | Error: User dont have permission for this action 
+1/4/2023, 2:45:37 PM - ERROR - error updating volunteer 62a5c9a42071b52f89b35c82 | Error: User dont have permission for this action 
+1/4/2023, 2:50:30 PM - ERROR - error updating volunteer 62a5c9a42071b52f89b35c82 | Error: User dont have permission for this action 
+1/4/2023, 3:00:58 PM - ERROR - error updating volunteer 62a5c9a42071b52f89b35c82 | Error: User dont have permission for this action 
+1/4/2023, 3:07:06 PM - ERROR - error updating volunteer 62a5c9a42071b52f89b35c82 | Error: User dont have permission for this action 
+1/4/2023, 3:10:35 PM - ERROR - error updating volunteer 62a5c9a42071b52f89b35c82 | Error: User dont have permission for this action 
+1/4/2023, 3:14:29 PM - ERROR - error updating volunteer 62a5c9a42071b52f89b35c82 | Error: User dont have permission for this action 
+1/4/2023, 4:06:01 PM - ERROR - Error while trying to find user by criteria {
+  "email": "community@lasova.org.il"
+} | MongooseServerSelectionError: getaddrinfo EAI_AGAIN ac-thrhdqd-shard-00-01.nnqvqex.mongodb.net 
+1/4/2023, 4:06:01 PM - ERROR - error while trying to login user community@lasova.org.il | MongooseServerSelectionError: getaddrinfo EAI_AGAIN ac-thrhdqd-shard-00-01.nnqvqex.mongodb.net 
+1/4/2023, 4:06:01 PM - ERROR - Error while trying to find user by criteria {
+  "email": "community@lasova.org.il"
+} | MongooseServerSelectionError: getaddrinfo EAI_AGAIN ac-thrhdqd-shard-00-01.nnqvqex.mongodb.net 
+1/4/2023, 4:06:01 PM - ERROR - error while trying to login user community@lasova.org.il | MongooseServerSelectionError: getaddrinfo EAI_AGAIN ac-thrhdqd-shard-00-01.nnqvqex.mongodb.net 
+1/4/2023, 4:17:54 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/4/2023, 4:19:37 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/4/2023, 4:27:54 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/4/2023, 4:29:58 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/4/2023, 4:32:16 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/4/2023, 4:38:20 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/4/2023, 4:38:20 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/4/2023, 4:38:20 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/4/2023, 4:38:27 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/4/2023, 4:41:24 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/4/2023, 4:41:25 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/4/2023, 4:41:25 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/4/2023, 4:42:18 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/4/2023, 4:42:18 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/4/2023, 4:42:18 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/4/2023, 4:43:36 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/4/2023, 4:43:36 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/4/2023, 4:43:36 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/4/2023, 4:43:42 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/4/2023, 4:45:42 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/4/2023, 4:47:11 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/4/2023, 4:47:11 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/4/2023, 4:47:11 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/4/2023, 4:47:37 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/4/2023, 4:49:33 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/4/2023, 4:49:33 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/4/2023, 4:49:33 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/4/2023, 4:50:12 PM - ERROR - error updating volunteer undefined | MongooseError: Operation `volunteers.findOne()` buffering timed out after 10000ms 
+1/4/2023, 4:50:12 PM - ERROR - error updating volunteer undefined | MongooseError: Operation `volunteers.findOne()` buffering timed out after 10000ms 
+1/4/2023, 4:50:12 PM - ERROR - error updating volunteer undefined | MongooseError: Operation `volunteers.findOne()` buffering timed out after 10000ms 
+1/4/2023, 4:50:22 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/4/2023, 4:51:26 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/4/2023, 4:51:26 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/4/2023, 4:51:26 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/4/2023, 4:51:37 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/4/2023, 4:52:16 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/4/2023, 4:52:16 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/4/2023, 4:52:16 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/4/2023, 4:53:43 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/4/2023, 4:53:43 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/4/2023, 4:53:43 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/4/2023, 4:53:48 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/4/2023, 9:22:25 PM - ERROR - failed to fetch volunteersMongoNetworkError: connection 5 to 18.200.114.186:27017 closed 
+1/4/2023, 9:22:34 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/4/2023, 9:27:31 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/4/2023, 9:39:55 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/4/2023, 9:42:13 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/4/2023, 9:44:09 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/4/2023, 9:45:28 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/4/2023, 9:49:14 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/4/2023, 9:49:54 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/4/2023, 9:51:46 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/4/2023, 9:54:52 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/4/2023, 9:59:15 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/4/2023, 10:02:08 PM - ERROR - error updating volunteer undefined | TypeError: Cannot read properties of undefined (reading 'date') 
+1/4/2023, 10:03:57 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/4/2023, 10:04:27 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/4/2023, 10:05:59 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/7/2023, 11:48:18 PM - ERROR - couldnt save volunteer | MongoNetworkError: connection 3 to 18.200.114.186:27017 closed 
+8.1.2023, 21:33:26 - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+8.1.2023, 21:33:54 - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+8.1.2023, 21:34:03 - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+8.1.2023, 21:36:53 - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+8.1.2023, 21:36:55 - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+8.1.2023, 21:38:17 - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+24.1.2023, 10:22:03 - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/8/2023, 9:00:39 PM - ERROR - error while trying to login user orela231089@gmail.com | Error: Invalid username / email 
+1/8/2023, 9:00:40 PM - ERROR - error while trying to login user orela231089@gmail.com | Error: Invalid username / email 
+1/8/2023, 9:00:48 PM - ERROR - error while trying to login user orela231089@gmail.com | Error: Invalid username / email 
+1/8/2023, 9:16:15 PM - ERROR - error while trying to login user orel231089@gmail.com | Error: Invalid username / email 
+1/8/2023, 9:16:24 PM - ERROR - error while trying to login user orel231089@gmail.com | Error: Invalid username / email 
+1/8/2023, 9:16:43 PM - ERROR - error while trying to login user orel231089@gmail.com | Error: Invalid username / email 
+1/8/2023, 9:34:33 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/8/2023, 9:36:49 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/8/2023, 9:37:02 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/8/2023, 9:42:48 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/8/2023, 9:43:22 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/8/2023, 9:44:17 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/8/2023, 9:45:22 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/8/2023, 9:46:22 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/8/2023, 9:48:21 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/8/2023, 9:49:18 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/8/2023, 9:50:35 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/8/2023, 9:52:14 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/8/2023, 9:52:30 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/8/2023, 9:53:33 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/8/2023, 9:58:10 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/8/2023, 9:59:24 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/10/2023, 3:33:23 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/10/2023, 3:35:05 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/10/2023, 3:37:38 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/10/2023, 3:39:41 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/10/2023, 3:41:53 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/10/2023, 3:43:10 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/10/2023, 3:43:31 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/13/2023, 11:44:30 AM - ERROR - error while trying to login user kfar.shalem@kadimanoar.org | Error: Invalid username / email 
+1/13/2023, 11:44:34 AM - ERROR - error while trying to login user kfar.shalem@kadimanoar.org | Error: Invalid username / email 
+1/13/2023, 11:44:37 AM - ERROR - error while trying to login user kfar.shalem@kadimanoar.org | Error: Invalid username / email 
+1/13/2023, 11:44:43 AM - ERROR - error while trying to login user kfar.shalem@kadimanoar.org | Error: Invalid username / email 
+1/13/2023, 11:47:05 AM - ERROR - error updating volunteer 63bb19deff079d21b373588f | Error: User dont have permission for this action 
+1/20/2023, 1:17:48 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/20/2023, 1:18:19 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/20/2023, 1:18:24 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/20/2023, 1:19:50 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/20/2023, 1:23:50 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/20/2023, 1:28:42 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/20/2023, 1:32:48 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/20/2023, 1:34:37 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/20/2023, 8:08:42 PM - ERROR - error updating volunteer 63ca6ce6f8965134bf6a35ba | Error: User dont have permission for this action 
+1/20/2023, 8:08:55 PM - ERROR - error updating volunteer 63ca6ce6f8965134bf6a35ba | Error: User dont have permission for this action 
+1/20/2023, 8:10:02 PM - ERROR - error updating volunteer 63ca6ce6f8965134bf6a35ba | Error: User dont have permission for this action 
+1/20/2023, 8:10:25 PM - ERROR - error updating volunteer 63ca6ce6f8965134bf6a35ba | Error: User dont have permission for this action 
+1/20/2023, 8:17:50 PM - ERROR - error updating volunteer 63ca6ce6f8965134bf6a35ba | Error: User dont have permission for this action 
+1/20/2023, 8:20:08 PM - ERROR - error updating volunteer 63ca6ce6f8965134bf6a35ba | Error: User dont have permission for this action 
+1/20/2023, 8:20:58 PM - ERROR - error updating volunteer 63ca6ce6f8965134bf6a35ba | Error: User dont have permission for this action 
+1/20/2023, 8:22:27 PM - ERROR - error updating volunteer 63ca6ce6f8965134bf6a35ba | Error: User dont have permission for this action 
+1/20/2023, 8:24:41 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/20/2023, 8:24:44 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/20/2023, 8:25:21 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/20/2023, 8:25:22 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/20/2023, 8:30:11 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/20/2023, 8:36:21 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/20/2023, 8:39:47 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/20/2023, 8:41:20 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/20/2023, 8:46:44 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/21/2023, 2:13:25 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/23/2023, 10:34:31 AM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/23/2023, 10:39:00 AM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/24/2023, 10:25:55 AM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/24/2023, 10:25:58 AM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/24/2023, 10:38:46 AM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+29.1.2023, 21:01:35 - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+29.1.2023, 21:02:31 - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+29.1.2023, 21:36:35 - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+1/28/2023, 10:52:25 AM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+<<<<<<< HEAD
+1/30/2023, 4:56:56 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+=======
+2/1/2023, 12:25:41 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+2/1/2023, 12:56:06 PM - ERROR - error while trying to login user http://localhost:3000/ | Error: Invalid username / email 
+2/1/2023, 12:56:08 PM - ERROR - error while trying to login user http://localhost:3000/ | Error: Invalid username / email 
+2/1/2023, 12:56:56 PM - ERROR - error while trying to login user testSignupRequest@gmail.com | Error: Invalid username / email 
+2/1/2023, 12:56:59 PM - ERROR - error while trying to login user testSignupRequest@gmail.com | Error: Invalid username / email 
+2/1/2023, 12:56:59 PM - ERROR - error while trying to login user testSignupRequest@gmail.com | Error: Invalid username / email 
+2/1/2023, 12:57:08 PM - ERROR - error while trying to login user testSignupRequest@gmail.com | Error: Invalid username / email 
+2/1/2023, 1:00:33 PM - ERROR - error while trying to login user testSignupRequest@gmail.com | Error: Invalid username / email 
+2/1/2023, 1:00:38 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+2/1/2023, 4:08:04 PM - ERROR - error while trying to login user testSignupRequest@gmail.com | Error: Invalid username / email 
+2/1/2023, 4:08:40 PM - ERROR - error while trying to login user testSignupRequest@gmail.com | Error: Invalid username / email 
+2/1/2023, 4:08:47 PM - ERROR - error while trying to login user testSignupRequest@gmail.com | Error: Invalid username / email 
+2/1/2023, 7:58:16 PM - ERROR - error while trying to login user testSignupRequest@gmail.com | Error: Invalid username / email 
+2/1/2023, 7:58:23 PM - ERROR - error while trying to login user testSignupRequest@gmail.com | Error: Invalid username / email 
+2/2/2023, 9:53:45 PM - ERROR - error while trying to login user aedawe | Error: Invalid username / email 
+2/2/2023, 9:53:47 PM - ERROR - error while trying to login user aedawe | Error: Invalid username / email 
+2/2/2023, 10:49:55 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+2/2/2023, 11:37:57 PM - ERROR - error updating volunteer undefined | Error: User dont have permission for this action 
+2/5/2023, 9:23:01 AM - ERROR - error while trying to login user community@lasova.org.il | Error: Invalid username / email 
+2/5/2023, 9:57:06 AM - ERROR - error while trying to login user community@lasova.org.il | Error: Invalid username / email 
+2/5/2023, 10:12:25 AM - ERROR - error while trying to login user community@lasova.org.il | Error: Invalid username / email 
+2/5/2023, 10:15:37 AM - ERROR - error while trying to login user community@lasova.org.il | Error: Invalid username / email 
+2/5/2023, 11:12:36 AM - ERROR - error while trying to login user community@lasova.org.il | Error: Invalid username / email 
+2/5/2023, 6:06:01 PM - ERROR - error while trying to login user community@lasova.org.il | Error: Invalid username / email 
+2/5/2023, 6:50:14 PM - ERROR - error while trying to login user community@lasova.org.il | Error: Invalid username / email 
+2/5/2023, 6:57:07 PM - ERROR - error while trying to login user community@lasova.org.il | Error: Invalid username / email 
+2/7/2023, 4:43:03 PM - ERROR - error while trying to login user testSignupRequest@gmail.com | Error: Invalid username / email 
+2/7/2023, 4:43:07 PM - ERROR - error while trying to login user testSignupRequest@gmail.com | Error: Invalid username / email 
+2/7/2023, 4:43:15 PM - ERROR - error while trying to login user testSignupRequest@gmail.com | Error: Invalid username / email 
+2/7/2023, 5:22:25 PM - ERROR - error while trying to login user community@lasova.org.il | Error: Invalid username / email 
+2/7/2023, 7:58:53 PM - ERROR - error while trying to login user testSignupRequest@gmail.com | Error: Invalid username / email 
+2/7/2023, 8:24:46 PM - ERROR - error while trying to login user community@lasova.org.il | Error: Invalid username / email 
+2/7/2023, 8:49:19 PM - ERROR - error while trying to login user community@lasova.org.il | Error: Invalid username / email 
+2/7/2023, 8:57:50 PM - ERROR - error while trying to login user community@lasova.org.il | Error: Invalid username / email 
+>>>>>>> ef405efcaceb29c52761604f095f91145101d990

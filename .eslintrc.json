@@ -1,0 +1,18 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es2021": true
+  },
+  "extends": "standard",
+  "overrides": [],
+  "parserOptions": {
+    "ecmaVersion": "latest"
+  },
+  "rules": {
+    "semi": ["error", "always"],
+    "no-extra-semi": 0,
+    "max-len": ["error", { "code": 120, "ignoreComments": true }],
+    "space-before-function-paren": ["error", "never"]
+  }
+}

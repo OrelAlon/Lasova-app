@@ -1,0 +1,115 @@
+.new_vol_modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: rem(1200px);
+  background-color: white;
+  border: none;
+  border-radius: rem(3px);
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: column;
+
+  .new_vol_title {
+    margin-right: rem(48px);
+    font-size: rem(36.8px);
+    font-family: Assistant-Semibold;
+  }
+  .new_vol_close-button {
+    background-image: url(./../../imgs/icons/close-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    margin: 10px 10px 0 0;
+    transition: 0.3s;
+
+    &:hover {
+      opacity: 0.8;
+      transform: rotate(180deg);
+    }
+  }
+  .new_vol_modal_content {
+    margin-right: rem(48px);
+  }
+
+  .new_vol_modal_form {
+    width: rem(1000px);
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .new_vol_modal_label {
+    font-size: rem(16px);
+    display: block;
+  }
+
+  .new_vol_modal_input {
+    width: rem(226px);
+    height: rem(40px);
+    margin: 0.3rem 0 1.2rem 0;
+    background-color: white;
+    border-color: black;
+    border-radius: rem(5px);
+    border-width: rem(1px);
+    padding-right: rem(8px);
+  }
+
+  .new_vol_modal_input_mail {
+    padding-left: rem(8px);
+    direction: ltr;
+  }
+
+  .gender_group {
+    margin: 0.3rem 0 2.4rem 0;
+  }
+
+  .gender_btns {
+    padding: rem(11.2px);
+  }
+
+  .summary_text {
+    min-width: rem(250px);
+    max-width: rem(250px);
+    min-height: rem(140px);
+    max-height: rem(200px);
+    padding: rem(11.2px);
+    margin: 0.3rem 0 1.2rem 0;
+    background-color: white;
+    border-color: black;
+    border-radius: rem(5px);
+    border-width: rem(1px);
+    border: 'none';
+  }
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .student_group {
+    margin: 0.3rem 0 1rem 0;
+  }
+
+  .student_btns {
+    padding: rem(11.2px);
+  }
+
+  .new_vol_modal_btn {
+    font-family: Assistant-Reg;
+    font-size: rem(24px);
+    width: rem(226px);
+    height: rem(40px);
+    top: rem(-19.2px);
+  }
+
+  .disable {
+    cursor: not-allowed;
+    background-color: #c4c4c4;
+    pointer-events: none;
+  }
+}

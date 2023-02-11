@@ -1,0 +1,16 @@
+.mainContainer{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    font-family: 'Rubik';
+
+
+
+        .innerContainer{
+            border: 2px solid red;
+
+        }
+
+
+}
