@@ -24,10 +24,10 @@
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
-    "server": "nodemon server.js --ignore client",
+    "server": "nodemon server.js",
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "build": "npm install && cd client && npm install && npm run build",
+    "build": "npm --prefix ./client install && npm --prefix ./client run build:prod",
     "lint": "eslint .  --ext .js",
     "lint:fix": "eslint --fix .  --ext .js"
   },
