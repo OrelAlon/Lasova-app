@@ -23,11 +23,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build:client": "npm --prefix /full/path/to/client install && npm --prefix /full/path/to/client run build:prod",
     "server": "nodemon server.js",
     "client": "npm start --prefix client",
     "testEnv": "nodemon server.js",
     "start": "concurrently \"npm run server\" \"npm run client\"",
+    "build:client": "npm --prefix /full/path/to/client install && npm --prefix /full/path/to/client run build:prod",
     "lint": "eslint .  --ext .js",
     "lint:fix": "eslint --fix .  --ext .js"
   },
