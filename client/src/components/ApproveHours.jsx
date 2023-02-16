@@ -9,7 +9,7 @@ function ApproveHours(props) {
   const [volunteer, setVolunteer] = useState(props.data.data.info);
   const volunteerHours = volunteer.hours;
 
-  // convert from unix int to date per required format
+  // convert from uix int to date per required format
   const convert2Date = (date) => {
     const volunteerDate = new Date(date);
     const dateOptions = { day: '2-digit', month: '2-digit', year: 'numeric' };
