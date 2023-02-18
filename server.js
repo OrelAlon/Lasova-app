@@ -15,7 +15,7 @@ if (process.env.NODE_ENV === 'development') {
     })
   );
 } else {
-  app.use(express.static(path.resolve(__dirname, 'public')));
+  app.use(express.static(path.resolve(__dirname, '../client/build')));
 }
 
 // Enables parsing of json req bodies.
@@ -44,7 +44,7 @@ app.use('/api/user', require('./api/user/user.routes'));
 app.use('/api/volunteering-program', require('./api/volunteering-program/volunteering-program.routes'));
 
 app.get('/**', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+  res.sendFile(path.join(__dirname, '../', 'client', 'build', 'index.html'));
 });
 
 // Starting the server on http://localhost:PORT
