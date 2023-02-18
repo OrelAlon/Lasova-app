@@ -11,7 +11,7 @@ const mongoose = require('mongoose');
 if (process.env.NODE_ENV === 'development') {
   app.use(
     cors({
-      origin: process.env.API_ACCESS_ALLOWED_URIs.split(',')
+      origin: ['http://localhost:3000', 'https://lasova-app.onrender.com/']
     })
   );
 } else {
