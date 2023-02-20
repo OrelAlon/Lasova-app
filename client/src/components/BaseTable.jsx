@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
 import { DataGrid, GridToolbarContainer, GridToolbarDensitySelector } from '@mui/x-data-grid';
-import MenuItem from '@mui/material/MenuItem';
+import MenuItem from '@muimaterial//MenuItem';
 
 import ExportCsvBtn from './ExportCsvBtn';
 import CustomNoRowsOverlay from './dataGrid/CustomNoRowsOverlay';
