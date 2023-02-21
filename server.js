@@ -7,6 +7,8 @@ const app = express();
 const fileUpload = require('express-fileupload');
 const mongoose = require('mongoose');
 
+app.use(express.static(path.join(__dirname, '../client/build')));
+
 // requests can only come from this domains
 if (process.env.NODE_ENV === 'development') {
   app.use(
