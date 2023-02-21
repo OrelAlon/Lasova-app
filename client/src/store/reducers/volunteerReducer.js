@@ -1,7 +1,7 @@
 const initialState = {
   volunteers: null,
   volunteersToShow: null,
-  volunteer: null,
+  volunteer: null
   // filters: {
   /*
       search: '',
@@ -18,44 +18,44 @@ export function volunteerReducer(state = initialState, action) {
       return {
         ...state,
         volunteers: action.volunteers,
-        volunteersToShow: action.volunteers,
+        volunteersToShow: action.volunteers
       };
     case 'ADD_VOLUNTEER':
       return {
         ...state,
         volunteers: [action.volunteer, ...state.volunteers],
-        volunteersToShow: [action.volunteer, ...state.volunteersToShow],
+        volunteersToShow: [action.volunteer, ...state.volunteersToShow]
       };
     case 'REMOVE_VOLUNTEER':
       return {
         ...state,
-        volunteers: state.volunteers.filter((volunteer) => volunteer._id !== action.volunteerId),
+        volunteers: state.volunteers.filter((volunteer) => volunteer._id !== action.volunteerId)
       };
     case 'UPDATE_VOLUNTEER':
       return {
         ...state,
         //volunteers: state.volunteers.map((volunteer) =>
-          //volunteer._id === action.volunteer._id ? action.volunteer : volunteer
+        //volunteer._id === action.volunteer._id ? action.volunteer : volunteer
         //),
-        volunteer: action.volunteer, //Naama
+        volunteer: action.volunteer //Naama
       };
     case 'SEARCH_VOLUNTEERS':
       return {
         ...state,
-        volunteersToShow: action.filteredVolunteers,
+        volunteersToShow: action.filteredVolunteers
       };
 
     case 'SET_AND_FILTER':
       return {
         ...state,
-        volunteersToShow: action.filteredVolunteers,
+        volunteersToShow: action.filteredVolunteers
       };
-    
-      //naama
+
+    //naama
     case 'LOAD_VOLUNTEER':
-        return {
-          volunteer: action.volunteerData
-        };
+      return {
+        volunteer: action.volunteerData
+      };
 
     default:
       return state;
