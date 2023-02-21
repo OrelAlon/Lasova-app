@@ -67,8 +67,13 @@
     margin: 0.3rem 0 2.4rem 0;
   }
 
+  .grouping {
+    display: flex;
+  }
   .gender_btns {
     padding: rem(11.2px);
+    // display: flex;
+    // flex-direction: row
   }
 
   .summary_text {
@@ -92,7 +97,7 @@
   }
 
   .student_group {
-    margin: 0.3rem 0 1rem 0;
+    margin: 0.3rem 0 0.5rem 0;
   }
 
   .student_btns {
@@ -111,5 +116,14 @@
     cursor: not-allowed;
     background-color: #c4c4c4;
     pointer-events: none;
+  }
+
+  .btn-icon:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); /* #edf7fd */
+  }
+
+  .btn-icon:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
   }
 }
