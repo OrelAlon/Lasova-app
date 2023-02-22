@@ -1,12 +1,20 @@
 .inner{
     display: flex; 
-    gap: 30px;
+    gap: 16px;
 }
 
 
 .col_inner{
     display: flex;
     flex-direction: column;
+    gap:10px;
 
-
+    .col-label {
+    font-size: 12px;
+    }
+   .col-data {
+    background-color: #EDF7FD;
+    padding: 8px;
+    border-radius: 4px;
+   }
 }

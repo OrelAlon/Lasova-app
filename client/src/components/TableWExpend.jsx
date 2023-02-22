@@ -127,6 +127,24 @@ const MyTable = ({
     useFlexLayout  // this make sure that the row can extand w/o moving the titles.
   );
 
+  //////Naama-Test
+  const saveData = (ev,row) => {
+    let prefix = /cell_\d+_/
+  //   // let colName = (ev.target.__reactFiber$tbfqxyn4qg.alternate.key).replace(prefix, "");
+  //  if (colName!='expander')
+  //   {   
+  //   console.log("innerText",ev.target.innerText)
+  //   // console.log('colName', colName)
+  //   console.log("volunteer id",row.original._id)
+    // console.log("ev",ev)
+    // console.log('row', row)
+    // console.log('row_id', row.id)
+    //}
+
+    }
+    
+  
+
 
   return (
     <React.Fragment>
@@ -215,7 +233,7 @@ const MyTable = ({
                       
                       {row.cells.map((cell) => {
                         return (
-                          <td  className="td-cell"  {...cell.getCellProps()}>
+                          <td  contentEditable='true' className="td-cell" suppressContentEditableWarning={true} onBlur={(ev)=>saveData(ev,row)}  {...cell.getCellProps()}>
                             {cell.render("Cell")}
                           </td>
                         );
@@ -223,8 +241,8 @@ const MyTable = ({
                     </tr>
                     {row.isExpanded ? (
                       <tr>
-                         <td > 
-                          <span className="subTable">
+                         <td className="td-subtable"> 
+                          <span  className="subTable">
                              {renderRowSubComponent({ row })} 
                           </span>
                          </td> 

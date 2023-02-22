@@ -45,7 +45,13 @@
   .new_vol_modal_label {
     font-size: rem(16px);
     display: block;
-  }
+
+    }
+    
+
+
+
+  
 
   .new_vol_modal_input {
     width: rem(226px);
@@ -67,14 +73,17 @@
     margin: 0.3rem 0 2.4rem 0;
   }
 
-  .grouping {
+  .grouping{
     display: flex;
   }
   .gender_btns {
     padding: rem(11.2px);
     // display: flex;
     // flex-direction: row
+
   }
+
+
 
   .summary_text {
     min-width: rem(250px);
@@ -118,12 +127,15 @@
     pointer-events: none;
   }
 
-  .btn-icon:hover {
+  .bton-icon:hover {
     transform: translateY(-3px);
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); /* #edf7fd */
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);/* #edf7fd */
   }
-
-  .btn-icon:hover::after {
+  
+  .bton-icon:hover::after {
     transform: scaleX(1.4) scaleY(1.6);
   }
+
+  
 }
+

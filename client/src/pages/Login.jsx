@@ -12,12 +12,16 @@ const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const handelSubmit = async (e) => {
+  const handleSubmit = async (e) => {
+    // const message = 'Please enter credentials'
     e.preventDefault();
     if (email === '' || password === '') {
+      // window.alert(message)
       return;
     }
-    dispatch(login(email, password));
+    dispatch(login(email, password/*,message */));
+
+
   };
 
   if (isAuthenticated) {
@@ -46,8 +50,8 @@ const Login = () => {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-        {/* <input type="password" name="password" value={password} onChange={e => setPassword(e.target.value)}/> */}
-        <button className="submit" type="submit" onClick={handelSubmit}>
+        
+        <button className="submit" type="submit" onClick={handleSubmit}>
           כניסה
         </button>
       </form>
@@ -79,7 +83,7 @@ const Wrapper = styled.section`
     width: 32rem;
     height: 6rem;
     background-color: #c4c4c4;
-    font-size: 3rem;
+    font-size: 2rem;
     border: none;
     padding-left: 1rem;
   }
@@ -93,7 +97,7 @@ const Wrapper = styled.section`
     width: 32rem;
     height: 6rem;
     background-color: #c4c4c4;
-    font-size: 3rem;
+    font-size: 2rem;
     border: none;
     padding-left: 1rem;
   }
@@ -109,6 +113,12 @@ const Wrapper = styled.section`
     cursor: pointer;
     font-family: inherit;
   }
+  .submit:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+.submit:hover::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0; }
 `;
 
 export default Login;

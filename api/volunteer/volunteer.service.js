@@ -99,6 +99,8 @@ async function volunteerUpdate(volunteer, currentUser) {
     const originalVolunteer = await Volunteer.findById(volunteer._id);
     // check if the same user who posting
 
+    console.log('originalVolunteer', originalVolunteer)
+
     checkIfSameUser = query({ email: currentUser.email }).then((response) => {
       if (response[0].email !== originalVolunteer.email) {
         console.log('test0');
@@ -110,7 +112,7 @@ async function volunteerUpdate(volunteer, currentUser) {
 
     for (const [key, value] of Object.entries(volunteer)) {
       console.log(originalVolunteer[key]);
-      if (key === 'hours') {
+      if (key === 'hours') { 
         value.map((entry, index) => {
           console.log('entry');
           console.log(entry);
@@ -146,9 +148,10 @@ async function volunteerUpdate(volunteer, currentUser) {
             throw Error(ErrorMessages.DontHavePermission);
           }
         });
-      } else if (value == !originalVolunteer[key]) {
+      } else if ((value == !originalVolunteer[key]) && key!='weekdayAvailability') {  //mayan - removed weekdayAvailability 16.2.23
         console.log('test3');
-        console.log(value);
+        console.log('value', value);
+        console.log('key', key)
         console.log(originalVolunteer[key]);
 
         throw Error(ErrorMessages.DontHavePermission);

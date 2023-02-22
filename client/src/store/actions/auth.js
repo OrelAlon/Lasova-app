@@ -19,14 +19,15 @@ export const loadUser = (user) => async (dispatch) => {
 export const login = (email, password) => async (dispatch) => {
   try {
     const token = await authService.login(email, password);
-    // console.log("TOKEN-REDUX:",token)
     dispatch({
       type: LOGIN_SUCCESS,
       payload: token
     });
     dispatch(loadUser(token));
   } catch (error) {
+    // window.alert('Credentials issues. Please try again')
     console.log('🚀 ~ file: store/actions/auth.js ~ line 34 ~ login ~ error', error);
+    
   }
 };
 

@@ -1,16 +1,21 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import Logo from '../assets/imgs/logo-mobile.png';
-import BasePage from './BasePage';
+// import BasePage from './BasePage';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import { useSelector, useDispatch } from 'react-redux';
-import { loadVolunteerById, loadVolunteers, saveVolunteer } from '../store/actions/volunteerActions';
-import Loader from '../components/Loader';
+import { /*loadVolunteerById, */loadVolunteers, saveVolunteer } from '../store/actions/volunteerActions';
+// import Loader from '../components/Loader';
+import Modal1Comp from '../components/Modals/Modal_message'
+
 
 export default function VolunteerLiveReport() {
   const [isStarted, setIsStarted] = useState(false);
   const [btn, setBtn] = useState({ color: '#92CE7F', text: 'התחל' });
+
+  const [modalStat, setModalStat] = useState(false)
+  const [message, setMessage] = useState('')
 
   const [startTime, setStartTime] = useState(0);
   const [timeToShow, setTimeToShow] = useState();
@@ -19,12 +24,13 @@ export default function VolunteerLiveReport() {
   const [forgotToReport, setForgotToReport] = useState(false);
   const [formValues, setFormValues] = useState({ date: '', startHour: '', endHour: '', verified: false });
 
-  const { isAuthenticated, user } = useSelector((state) => state.authReducer);
+  const { /*isAuthenticated,*/ user } = useSelector((state) => state.authReducer);
 
   const dispatch = useDispatch();
 
   useEffect(() => {
     if (!volunteer) {
+
       //dispatch(loadVolunteerById(user._id));
       dispatch(loadVolunteers(user.email)); // working but not getting the correct volunteer, maybe better to use ref in the backend to get the same id from the user
       //dispatch(loadVolunteerById("62a5c9a42071b52f89b35c82")); //for example only-"Reemos"
@@ -32,6 +38,7 @@ export default function VolunteerLiveReport() {
   }, []);
 
   let { volunteer } = useSelector((state) => state.volunteerReducer);
+
 
   const [editVolunteer, setEditVolunteer] = useState({
     ...volunteer
@@ -57,22 +64,43 @@ export default function VolunteerLiveReport() {
   const confirmHours = () => {
     let { date, startHour, endHour } = formValues;
     if (date && startHour && endHour) {
-      startHour = new Date(`${date} ${endHour}`).getTime();
+      startHour = new Date(`${date} ${startHour}`).getTime();
       endHour = new Date(`${date} ${endHour}`).getTime();
       date = new Date(date).getTime();
-      let timeValues = { date, start: startHour, end: endHour, verified: false };
-      hours = [timeValues, ...volunteer.hours];
-      setEditVolunteer({ ...volunteer, hours });
+      const currentDate=new Date().getTime();
+      if (startHour < endHour && currentDate>=date) {
+        let timeValues = { date, start: startHour, end: endHour, verified: false }
+        hours = [timeValues, ...volunteer.hours];
+
+        // in order to go back to the "start" screen
+        setEditVolunteer({ ...volunteer, hours })
+        setIsStarted(false)
+        setEndTime(null)
+        setStartTime(null)
+        setTimeToShow()
+        setForgotToReport(false)
+        setMessage('')
+        setModalStat(false)
+        setFormValues({ date: '', startHour: '', endHour: '', verified: false })
+      }
+      else {
+        setMessage('הוכנס תאריך עתידי או שעת התחלה הגדולה משעת סיום')
+        setModalStat(true)
+      }
+    }
+    else {
+      setMessage('יש להכניס תאריך, שעת התחלה ושעת סיום')
+      setModalStat(true)
     }
   };
 
   useEffect(() => {
-    // console.log('volunteer: ', volunteer);
     if (volunteer) {
       hours = [...JSON.parse(JSON.stringify(volunteer.hours))];
     }
   }, [volunteer]);
 
+  
   useEffect(() => {
     if (isStarted) {
       setStartTime(Date.now());
@@ -82,6 +110,7 @@ export default function VolunteerLiveReport() {
     setBtn(isStarted ? { color: '#C87575', text: 'סיום' } : { color: '#92CE7F', text: 'התחל' });
   }, [isStarted]);
 
+  // set the clock of runtime
   useEffect(() => {
     let intervalId = null;
     if (isStarted) {
@@ -94,6 +123,7 @@ export default function VolunteerLiveReport() {
     };
   }, [isStarted, startTime]);
 
+
   useEffect(() => {
     if (endTime > 0) {
       setTimeToShow(new Date(endTime - startTime).toString().split(' ')[4]);
@@ -105,13 +135,42 @@ export default function VolunteerLiveReport() {
 
   useEffect(() => {
     if (volunteer) {
-      console.log('saveVolunteer in live report');
       volunteer = dispatch(saveVolunteer(editVolunteer));
     }
   }, [editVolunteer]);
 
+  // convert hh:mm:ss to PM/AM mode
+  const handleContinue = () => {
+    setIsStarted(false)
+    setEndTime(null)
+    setStartTime(null)
+    setTimeToShow()
+    setForgotToReport(false)
+    setMessage('')
+    setModalStat(false)
+    setFormValues({ date: '', startHour: '', endHour: '', verified: false })
+  }
+
+  // convert hh:mm:ss to PM/AM mode
+  const tConvert = (time) => {
+    // Check correct time format and split into components
+    console.log('time', time)
+
+    time = time.toString().match(/^([01]\d|2[0-3])(:)([0-5]\d)(:[0-5]\d)?$/) || [time];
+
+    if (time.length > 1) { // If time format correct
+      time = time.slice(1);  // Remove full string match value
+      time = time.slice(0, -1) // remove the seconds
+      time[5] = +time[0] < 12 ? 'AM' : 'PM'; // Set AM/PM
+      time[0] = +time[0] % 12 || 12; // Adjust hours
+    }
+    return time.join(''); // return adjusted time or original string
+  }
+
+
   return (
     <>
+
       {volunteer && (
         <div className="volunteer-report">
           <Footer />
@@ -119,75 +178,150 @@ export default function VolunteerLiveReport() {
             <img src={Logo} alt="laSova" className="logo-mobile" />
           </div>
           {!isStarted && !endTime && !forgotToReport && <h2 className="header">היי {user.firstname}, חיכינו רק לך!</h2>}
+
           {isStarted && !forgotToReport && <h2 className="header">תודה שהשתתפת</h2>}
+
           {!endTime && !forgotToReport && (
             <div className="report-form">
               <p className="report-program">{volunteer.groupName}</p>
-              <button className="report-btn" style={{ backgroundColor: btn.color }} onClick={toggleBtn}>
+              <button className="report-btn bton-icon" style={{ backgroundColor: btn.color }} onClick={toggleBtn}>
                 {btn.text}
               </button>
+
               {!isStarted && !endTime && (
                 <button className="report-text" onClick={reportManually}>
                   שכחת לדווח?
                 </button>
               )}
+
+              {/* present the clock of run time */}
               {isStarted && <p className="report-text">{timeToShow}</p>}
               {!isStarted && endTime && <p className="report-text">{timeToShow}</p>}
             </div>
           )}
+
           {(endTime || forgotToReport) && <h2 className="header">אז מה היה לנו?</h2>}
           {(endTime || forgotToReport) && (
             <div className="report-form">
               <p className="report-program">{volunteer.groupName}</p>
-              <div className="input-date">
-                <p className="date-text">תאריך הפעילות</p>
-                <input
-                  type={endTime ? 'text' : 'date'}
-                  name="date"
-                  onChange={(ev) => handleChange(ev)}
-                  placeholder={
-                    endTime
-                      ? new Date(volunteer.hours[0]?.start).getDate() +
-                        '/' +
-                        (+new Date(volunteer.hours[0]?.start).getMonth() + 1) +
-                        '/' +
-                        new Date(volunteer.hours[0]?.start).getFullYear()
-                      : ''
-                  }
-                />
+
+              {/*=======  modal in case of issues with data eneting  ===========  */}
+              <div>
+                <Modal1Comp trigger={modalStat} setTrigger={setModalStat}>
+                  <div className='modalMessage'> {message} </div>
+                </Modal1Comp>
+
               </div>
 
+
+              <div className="input-date">
+                <p className="date-text"> תאריך הפעילות (MM-DD-YYYY) </p>
+
+                {/*=======  date  ===========  */}
+                {endTime?
+                <input
+                  type='text' 
+                  name="date"
+                  value={
+                      (new Date(volunteer.hours[0]?.start).getMonth() + 1) +
+                      '/' +
+                      (new Date(volunteer.hours[0]?.start).getDate()) +
+                      '/' +
+                      new Date(volunteer.hours[0]?.start).getFullYear()
+                        }
+                  readOnly
+                />
+                :
+                  <input
+                  type='date'
+                  name="date"
+                  onChange={(ev) => handleChange(ev)}
+                  placeholder= ''
+                   />
+              }
+
+              </div>
+
+              {/*=======  start & end time ===========  */}
               <div className="hours">
                 <div className="input-start">
                   <p className="start-hour-text">שעת התחלה</p>
-                  <input
-                    type="time"
+                    {endTime ?
+                    
+                   <input
+                    type= 'text' 
                     name="startHour"
-                    placeholder={endTime ? new Date(volunteer.hours[0]?.start).toString().split(' ')[4] : ''}
-                    onChange={(ev) => handleChange(ev)}
-                  />
+                    value={tConvert(new Date(volunteer.hours[0]?.start).toString().split(' ')[4])}
+                    readOnly
+                   />
+                  :
+
+                  <input
+                    type= 'time'
+                    name="startHour"
+                    placeholder= ''
+                    onChange={(ev) => handleChange(ev)}       />
+                  
+                  }
+
+                    
+
                 </div>
                 <div className="input-end">
                   <p className="end-hour-text">שעת סיום</p>
-                  <input
-                    type="time"
-                    name="endHour"
-                    placeholder={endTime ? new Date(volunteer.hours[0]?.end).toString().split(' ')[4] : ''}
-                    onChange={(ev) => handleChange(ev)}
-                  />
+
+                  {endTime ?
+                    <input
+                     type= 'text' 
+                     name="endHour"
+                     value={tConvert(new Date(volunteer.hours[0]?.end).toString().split(' ')[4])}
+                     readOnly
+                    />
+                   :
+ 
+                   <input
+                     type= 'time'
+                     name="endHour"
+                     placeholder= ''
+                     onChange={(ev) => handleChange(ev)}       />
+                   
+                   }
+ 
+
+
                 </div>
               </div>
-              {forgotToReport && (
-                <button className="confirm-btn" onClick={confirmHours}>
-                  אישור
+
+              {/*=======  in case we are after "סיום" ===========  */}
+              {!isStarted && !forgotToReport &&
+                <button className="confirm-btn bton-icon" onClick={handleContinue}>
+                  המשך
                 </button>
-              )}
+              }
+
+              {/*=======  in case we are after "שכחת לדווח" ====  */}
+              <div className='confirm_cancel_addtime'>
+                {forgotToReport && (
+                  <button className="back-btn bton-icon" onClick={confirmHours}>
+                    אישור
+                  </button>
+                )}
+
+                {forgotToReport &&
+                  <button className="back-btn bton-icon" onClick={handleContinue}>
+                    חזור
+                  </button>
+                }
+              </div>
+
+
             </div>
           )}
 
           <div className="volunteer-user">
             <Header />
           </div>
+
         </div>
       )}
     </>

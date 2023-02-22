@@ -1,73 +1,111 @@
 import { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { loadVolunteeringProgram } from '../store/actions/volunteeringProgramAction';
-import { saveVolunteer } from '../store/actions/volunteerActions';
+import { loadVolunteers, saveVolunteer } from '../store/actions/volunteerActions';
 import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
 import TextareaAutosize from '@mui/material/TextareaAutosize';
 import Button from '@mui/material/Button';
+import Modal1Comp from '../components/Modals/Modal_message'
 // import { UploadVolunteerFilesButton } from './UploadButton';
-//comment Mayan
 
-const VolunteerObj = {
-  taz: '',
-  volunteeringProgram: '',
-  firstName: '',
-  lastName: '',
-  cellphone: '',
-  city: '',
-  email: '',
-  gender: '',
-  summary: '',
-  volunteerType: '',
-  status: '',
-  files: []
-};
-const NewVolunteerModal = ({ open, setOpen }) => {
+
+const NewVolunteerModal = (props) => {
   const dispatch = useDispatch();
-  const { volunteeringProgram } = useSelector((state) => state.volunteeringProgramReducer);
 
-  const [isOption2, setIsOption2] = useState(false);
-  const [isOption3, setIsOption3] = useState(false);
-  const [enable, setEnable] = useState(true);
-  const [newVolunteer, setNewVolunteer] = useState(VolunteerObj);
+  const associatedPrograms = useSelector((state) => state.volunteeringProgramReducer.volunteeringProgram);
+  const { user } = useSelector((state) => state.authReducer);
+
+  //=== make sure that there are no 2 emails alike ==============
+
+  const volunteersEmails = props.valunteersList.map(elem => elem['email'])
+  // in case of Edit we need to ignore current email
+  if (props.modalStatus === 'Edit') {
+    const index = volunteersEmails.indexOf(props.data['email']);
+    delete volunteersEmails[index];
+  }
+
+
+  // ======= set the volunteer as blank or as Editone ======//
+  const [newVolunteer, setNewVolunteer] = useState({
+    taz: '',
+    volunteeringProgram: '',
+    firstName: '',
+    lastName: '',
+    cellphone: '',
+    city: '',
+    email: '',
+    gender: '',
+    summary: '',
+    volunteerType: '',
+    statue: '',
+    files: [],
+    talkSummary: '',
+    studentoption: '',
+    scholarshipName: '',
+    officerName: '',
+    officerPhone: '',
+    hasDrivingLicence: '',
+    availableInEmergency: '',
+    educationalInstitution: '',
+    address: ''
+
+
+  });
 
   useEffect(() => {
-    dispatch(loadVolunteeringProgram());
-  }, [dispatch]);
-
-  const associatedPrograms = volunteeringProgram; //  array,  from the back end
-
-  const handleChange = (e) => {
-    let value = e.target.value;
-    if (e.target.type === 'file') {
-      value = e.target.files;
-      console.log('e.target.value', e.target.files);
+    if (props.modalStatus === 'Edit') {
+      setNewVolunteer({
+        taz: props.data['taz'],
+        volunteeringProgram: props.data['volunteeringProgram'][0],
+        firstName: props.data['firstName'],
+        lastName: props.data['lastName'],
+        cellphone: props.data['cellphone'],
+        city: props.data['city'],
+        email: props.data['email'],
+        gender: props.data['gender'],
+        summary: props.data['summary'],
+        volunteerType: props.data['volunteerType'],
+        status: props.data['status'],
+        files: [],
+        talkSummary: props.data['talkSummary'],
+        studentoption: props.data['studentoption'],
+        scholarshipName: props.data['scholarshipName'],
+        officerName: props.data['officerName'],
+        officerPhone: props.data['officerPhone'],
+        hasDrivingLicence: props.data['hasDrivingLicence'],
+        availableInEmergency: props.data['availableInEmergency'],
+        educationalInstitution: props.data['educationalInstitution'],
+        address: props.data['address'],
+        _id: props.data['_id'],
+        hours: props.data['hours'],
+      })
     }
-    setNewVolunteer((prev) => ({ ...prev, [e.target.name]: value }));
-    if (e.target.name === 'volunteeringProgram')
-      return setNewVolunteer((prev) => ({ ...prev, volunteeringProgram: value }));
 
-    if (e.target.name === 'volunteerType') {
-      switch (e.target.value) {
-        case 'עצמאי':
-          setIsOption2(false);
-          setIsOption3(false);
-          break;
-        case 'null':
-          setIsOption2(false);
-          setIsOption3(false);
-          break;
-        case 'סטודנט':
-          setIsOption2(true);
-          setIsOption3(false);
-          break;
-        case 'שלצ':
-          setIsOption2(false);
-          setIsOption3(true);
-          break;
-        default:
-          break;
+  }, [])
+
+
+  //===================================================
+
+
+  const [enable, setEnable] = useState(true);
+
+  const [emailIssue, setEmailIssue] = useState(false)
+  const [emailValue, setEmailValue] = useState()
+
+  const handleEditFileds = (e) => {
+    if ([e.target.name] != 'email') {
+      setNewVolunteer({ ...newVolunteer, [e.target.name]: e.target.value })
+    }
+    else {
+      //=== make sure that there are no 2 emails alike ==============
+      if (!volunteersEmails.includes(e.target.value)) {
+        setNewVolunteer({ ...newVolunteer, [e.target.name]: e.target.value })
+      }
+      else {
+        setEmailValue(e.target.value)
+        setEmailIssue(true)
+
+        // alert('המייל שהוכנס כבר קיים במערכת. אנא נסו שוב' + e.target.value)
       }
     }
   };
@@ -75,17 +113,20 @@ const NewVolunteerModal = ({ open, setOpen }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setNewVolunteer(newVolunteer);
-    console.log(newVolunteer);
-    dispatch(saveVolunteer(newVolunteer));
-    setOpen(false);
+    props.modalStatus === 'New' ? dispatch(saveVolunteer(newVolunteer)) : dispatch(saveVolunteer(newVolunteer, user));
+    props.setOpen(false);
+    dispatch(loadVolunteers())
+
   };
 
   return (
     <>
-      <Modal open={open} onClose={() => setOpen(false)}>
+      <Modal open={props.open} onClose={() => props.setOpen(false)}>
         <Box className="new_vol_modal">
-          <button className="new_vol_close-button" onClick={() => setOpen(false)} type="button" />
-          <h1 className="new_vol_title">רישום מתנדב חדש</h1>
+          <button className="new_vol_close-button" onClick={() => props.setOpen(false)} type="button" />
+
+          <h1 className="new_vol_title">{props.modalStatus === 'New' ? 'רישום מתנדב חדש' : 'עדכון נתוני מתנדב'}</h1>
+
           <div className="new_vol_modal_content">
             <form className="new_vol_modal_form" onSubmit={handleSubmit}>
               <div className="right">
@@ -98,10 +139,12 @@ const NewVolunteerModal = ({ open, setOpen }) => {
                   id="firstName"
                   name="firstName"
                   pattern=".{2,}"
+                  value={newVolunteer.firstName}
                   title="אנא הזן שם פרטי"
                   required
-                  onChange={handleChange}
+                  onChange={handleEditFileds}
                 />
+
                 <label htmlFor="lastName" className="new_vol_modal_label">
                   שם משפחה*
                 </label>
@@ -111,12 +154,15 @@ const NewVolunteerModal = ({ open, setOpen }) => {
                   id="lastName"
                   name="lastName"
                   pattern=".{2,}"
+                  value={newVolunteer.lastName}
                   title="אנא הזן שם משפחה"
                   required
-                  onChange={handleChange}
+                  onChange={handleEditFileds}
                 />
+
                 <label htmlFor="taz" className="new_vol_modal_label">
-                  ת.ז*
+                  {' '}
+                  ת.ז*{' '}
                 </label>
                 <input
                   className="input"
@@ -124,12 +170,14 @@ const NewVolunteerModal = ({ open, setOpen }) => {
                   id="taz"
                   name="taz"
                   pattern=".{9}"
+                  value={newVolunteer.taz}
                   title="אנא הזן תעודת זהות תקינה"
                   required
-                  onChange={handleChange}
+                  onChange={handleEditFileds}
                 />
+
                 <label htmlFor="cellphone" className="new_vol_modal_label">
-                  טלפון*
+                  טלפון*{' '}
                 </label>
                 <input
                   className="input"
@@ -137,26 +185,51 @@ const NewVolunteerModal = ({ open, setOpen }) => {
                   id="cellphone"
                   name="cellphone"
                   pattern="05?[0-9]-?[0-9]{7}"
+                  value={newVolunteer.cellphone}
                   title="אנא הזן מספר סלולרי תקין"
                   required
-                  onChange={handleChange}
+                  onChange={handleEditFileds}
                 />
+    
                 <label htmlFor="email" className="new_vol_modal_label">
-                  מייל*
+                  מייל*{' '}
+                      {/*=======  modal in case of issues with data eneting  ===========  */}
+                      <Modal1Comp trigger={emailIssue} setTrigger={setEmailIssue}>
+                        <div className='modalMessage'> המייל {emailValue} שהוכנס כבר קיים במערכת. אנא נסו שוב</div>
+                      </Modal1Comp>
                 </label>
                 <input
                   className="input new_vol_modal_input_mail "
-                  type="email"
+                  //type="email"
+                  type="text"
                   id="email"
                   name="email"
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                  value={newVolunteer.email}
                   title="אנא הזן כתובת מייל תקינה"
                   required
-                  onChange={handleChange}
+                  onChange={handleEditFileds}
+                />
+
+                <label htmlFor="address" className="new_vol_modal_label">
+                  כתובת*
+                </label>
+                <input
+                  className="input"
+                  type="text"
+                  id="address"
+                  name="address"
+                  pattern=".{2,}"
+                  value={newVolunteer.address}
+                  title="אנא הזן כתובת"
+                  required
+                  onChange={handleEditFileds}
                 />
               </div>
               <div className="center">
                 <label htmlFor="city" className="new_vol_modal_label">
-                  עיר מגורים*
+                  {' '}
+                  עיר מגורים*{' '}
                 </label>
                 <input
                   className="input"
@@ -164,44 +237,137 @@ const NewVolunteerModal = ({ open, setOpen }) => {
                   id="city"
                   name="city"
                   pattern=".{2,}"
+                  value={newVolunteer.city}
                   title="אנא הזן עיר"
                   required
-                  onChange={handleChange}
+                  //onChange={(e)=>setNewVolunteer({...newVolunteer, city: e.target.value})}
+                  onChange={handleEditFileds}
                 />
-                <label className="new_vol_modal_label">לשון פניה</label>
-                <div className="gender_group" onChange={handleChange}>
-                  <span className="gender_btns">
-                    <input type="radio" value="זכר" name="gender" />
-                    <label htmlFor="male">זכר</label>
-                  </span>
-                  <span className="gender_btns">
-                    <input type="radio" value="נקבה" name="gender" />
-                    <label htmlFor="female">נקבה</label>
-                  </span>
-                  <span className="gender_btns">
-                    <input type="radio" value="אחר" name="gender" />
-                    <label htmlFor="other">אחר</label>
-                  </span>
+
+                <div className="grouping">
+                  <label className="new_vol_modal_label">לשון פניה</label>
+                  <div className="gender_group">
+                    <span className="gender_btns">
+                      <input
+                        type="radio"
+                        value="זכר"
+                        name="gender"
+                        checked={newVolunteer.gender === 'זכר'}
+                        onChange={handleEditFileds}
+                      />
+                      <label htmlFor="male">זכר</label>
+                    </span>
+                    <span className="gender_btns">
+                      <input
+                        type="radio"
+                        value="נקבה"
+                        name="gender"
+                        checked={newVolunteer.gender === 'נקבה'}
+                        onChange={handleEditFileds}
+                      />
+                      <label htmlFor="female">נקבה</label>
+                    </span>
+                    <span className="gender_btns">
+                      <input
+                        type="radio"
+                        value="אחר"
+                        name="gender"
+                        checked={newVolunteer.gender === 'אחר'}
+                        onChange={handleEditFileds}
+                      />
+                      <label htmlFor="other">אחר</label>
+                    </span>
+                  </div>
                 </div>
+
+                <div className="grouping">
+                  <label className="new_vol_modal_label">רשיון נהיגה</label>
+                  <div className="gender_group">
+                    <span className="gender_btns">
+                      <input
+                        type="radio"
+                        value="יש"
+                        name="hasDrivingLicence"
+                        checked={newVolunteer.hasDrivingLicence === 'יש'}
+                        onChange={handleEditFileds}
+                      />
+                      <label htmlFor="has">יש</label>
+                    </span>
+                    <span className="gender_btns">
+                      <input
+                        type="radio"
+                        value="אין"
+                        name="hasDrivingLicence"
+                        checked={newVolunteer.hasDrivingLicence === 'אין'}
+                        onChange={handleEditFileds}
+                      />
+                      <label htmlFor="doesnthave">אין</label>
+                    </span>
+                  </div>
+                </div>
+
+                <div className="grouping">
+                  <label className="new_vol_modal_label">זמינות בחירום</label>
+                  <div className="gender_group">
+                    <span className="gender_btns">
+                      <input
+                        type="radio"
+                        value="כן"
+                        name="availableInEmergency"
+                        checked={newVolunteer.availableInEmergency === 'כן'}
+                        onChange={handleEditFileds}
+                      />
+                      <label htmlFor="canemergency">כן</label>
+                    </span>
+                    <span className="gender_btns">
+                      <input
+                        type="radio"
+                        value="לא"
+                        name="availableInEmergency"
+                        checked={newVolunteer.availableInEmergency === 'לא'}
+                        onChange={handleEditFileds}
+                      />
+                      <label htmlFor="cannotemergency">לא</label>
+                    </span>
+                  </div>
+                </div>
+
                 <label className="new_vol_modal_label">סיכום שיחה</label>
-                <TextareaAutosize type="text" name="summary" className="summary_text" onChange={handleChange} />
+                <TextareaAutosize
+                  type="text"
+                  value={newVolunteer.talkSummary}
+                  name="talkSummary"
+                  className="summary_text"
+                  onChange={handleEditFileds}
+                />
               </div>
+
               <div className="left">
                 <div>
                   <>
                     <label className="new_vol_modal_label">בחר מסגרת התנדבות</label>
-                    <select name="volunteeringProgram" className="input" onChange={handleChange}>
-                      {associatedPrograms?.map((program, idx) => (
-                        <option value={program._id} key={idx}>
-                          {program.name}
+                    <select
+                      name="volunteeringProgram"
+                      value={newVolunteer.volunteeringProgram}
+                      className="input"
+                      onChange={handleEditFileds}
+                    >
+                      {associatedPrograms.map((p) => (
+                        <option key={p._id} value={p._id}>
+                          {p.name}
                         </option>
                       ))}
                     </select>
                   </>
 
                   <label className="new_vol_modal_label">בחר מסגרת מפנה</label>
-                  <select name="volunteerType" className="input" onChange={handleChange}>
-                    <option id="0" value="null">
+                  <select
+                    name="volunteerType"
+                    className="input"
+                    value={newVolunteer.volunteerType}
+                    onChange={handleEditFileds}
+                  >
+                    <option id="0" value=" בחר מסגרת מפנה">
                       בחר מסגרת מפנה
                     </option>
                     <option id="1" value="עצמאי">
@@ -214,40 +380,82 @@ const NewVolunteerModal = ({ open, setOpen }) => {
                       של"צ
                     </option>
                   </select>
-                  {isOption2 && (
+                  {newVolunteer.volunteerType === 'סטודנט' && (
                     <>
-                      <div className="student_group" onChange={handleChange}>
+                      <div className="student_group">
                         <span className="student_btns">
-                          <input type="checkbox" value="נקז" name="student" />
+                          <input
+                            type="checkbox"
+                            value="נקז"
+                            name="studentoption"
+                            studentoption="student"
+                            checked={newVolunteer.studentoption === 'נקז'}
+                            onChange={handleEditFileds}
+                          />
                           <label htmlFor="nakaz">נק"ז</label>
                         </span>
                         <span className="student_btns">
-                          <input type="checkbox" value="מלגה" name="student" />
+                          <input
+                            type="checkbox"
+                            value="מלגה"
+                            name="studentoption"
+                            studentoption="student"
+                            checked={newVolunteer.studentoption === 'מלגה'}
+                            onChange={handleEditFileds}
+                          />
                           <label htmlFor="milga">מלגה</label>
                         </span>
                       </div>
+                      <label className="new_vol_modal_label">מקום לימודים</label>
+                      <input
+                        className="input"
+                        type="text"
+                        value={newVolunteer.educationalInstitution}
+                        name="educationalInstitution"
+                        required
+                        onChange={handleEditFileds}
+                      />
+
                       <label className="new_vol_modal_label">שם המלגה</label>
-                      <input className="input" type="text" name="milgaName" required onChange={handleChange} />
+                      <input
+                        className="input"
+                        type="text"
+                        value={newVolunteer.scholarshipName}
+                        name="scholarshipName"
+                        required
+                        onChange={handleEditFileds}
+                      />
                     </>
                   )}
-                  {isOption3 && (
+                  {newVolunteer.volunteerType === 'שלצ' && (
                     <>
                       <label className="new_vol_modal_label">שם קצינת מבחן</label>
-                      <input className="input" type="text" name="kzinaName" required onChange={handleChange} />
+                      <input
+                        className="input"
+                        type="text"
+                        value={newVolunteer.officerName}
+                        name="officerName"
+                        required
+                        onChange={handleEditFileds}
+                      />
                       <label className="new_vol_modal_label">טלפון קצינת מבחן</label>
-                      <input className="input" type="text" name="kzinaPhone" required onChange={handleChange} />
+                      <input
+                        className="input"
+                        type="text"
+                        value={newVolunteer.officerPhone}
+                        name="officerPhone"
+                        required
+                        onChange={handleEditFileds}
+                      />
                     </>
                   )}
-                  {/* </div>
-                <UploadVolunteerFilesButton onChange={handleChange} />
-                <div> */}
                 </div>
                 <Button
                   variant="contained"
                   type="submit"
-                  className={enable ? 'new_vol_modal_btn' : 'new_vol_modal_btn disable'}
+                  className={enable ? 'new_vol_modal_btn bton-icon' : 'new_vol_modal_btn bton-icon disable'}
                 >
-                  הוסף למסגרת
+                  {props.modalStatus === 'New' ? ' הוסף למסגרת' : 'עדכן מתנדב'}
                 </Button>
               </div>
             </form>

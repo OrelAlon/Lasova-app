@@ -109,14 +109,17 @@
   }
 }
 
-.btn-icon:hover {
+
+
+.bton-icon:hover {
   transform: translateY(-3px);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); /* #edf7fd */
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);/* #edf7fd */
 }
 
-.btn-icon:hover::after {
+.bton-icon:hover::after {
   transform: scaleX(1.4) scaleY(1.6);
 }
+
 
 .base-page {
   display: flex;
@@ -151,6 +154,7 @@
   /*height: 30px;
   width: 30px;
   background-color: rgb(146, 206, 127);*/
+
 }
 
 .approve-hours {
