@@ -23,10 +23,10 @@ const BasePage = ({ children, title, doSearch, doExport, onAdd }) => {
             />
           </span>
           <span className="header-btns flex">
-            <button className="export" onClick={doExport}>
+            <button className="export  bton-icon" onClick={doExport}>
               <ExportIcon />
             </button>
-            <button className="add-new btn-icon" onClick={onAdd}>
+            <button className="add-new bton-icon" onClick={onAdd}>
               <AddVolunteerIcon />
             </button>
           </span>

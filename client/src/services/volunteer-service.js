@@ -9,21 +9,20 @@ export const volunteerService = {
 const BASE_URL = 'volunteer';
 
 //function query({ isDefault, doReset } = {}) {
-function query(filter = {}) {
-  console.log('filter');
-  console.log(filter);
-  return httpService.get(`${BASE_URL}`, filter);
+  async function query(filter = {}) {
+  console.log('filter', filter);
+  return await httpService.get(`${BASE_URL}`, filter);
 }
 
 function saveVolunteer(volunteer, user = '') {
   return volunteer._id ? _updateVolunteer(volunteer, user) : _addVolunteer(volunteer);
 }
 
-function _updateVolunteer(volunteer, user) {
+async function _updateVolunteer(volunteer, user) {
   if (!user || volunteer.email === user.email) {
-    return httpService.put(`${BASE_URL}/${BASE_URL}/${volunteer._id}`, volunteer);
+    return await httpService.put(`${BASE_URL}/${BASE_URL}/${volunteer._id}`, volunteer);
   } else {
-    return httpService.put(`${BASE_URL}/admin/${volunteer._id}`, volunteer);
+    return await httpService.put(`${BASE_URL}/admin/${volunteer._id}`, volunteer);
   }
 }
 
@@ -33,7 +32,7 @@ function getVolunteerById(volunteerId) {
 }
 
 async function _addVolunteer(volunteer) {
-  console.log('_addVolunteer');
+  // console.log('_addVolunteer');
   const { files, ...volunteerJSON } = volunteer;
   const formData = new FormData();
   const json = JSON.stringify(volunteerJSON);

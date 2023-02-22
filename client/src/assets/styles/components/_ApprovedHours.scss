@@ -1,0 +1,36 @@
+.Approved-hours {
+    font-family: Assistant-Reg;
+    background-color: white;
+    border-radius: 4px;
+
+    .hours-approval-table {
+       padding: 8px 16px;
+       overflow-y:auto;
+       max-height: 210px;
+    
+    table {
+        width: 100%;
+    
+    tbody {
+        background-color: white;
+        //width: 100%;
+        tr {
+            padding: 8px 16px 8px 16px;
+        td {
+            button {
+                color: #2A526F;
+                font-size: 12px;
+            }
+            .btn-primary {
+                color: #92CE7F;
+                background-color: transparent;
+                border: none;
+                font-size: 16px;
+                font-family: 'Rubik-regular';
+            }
+        }
+    }
+    }
+}
+}
+}

@@ -11,6 +11,8 @@ const STORAGE_KEY = 'volunteers';
 })();
 
 // serverService will be used to make requests to server:
+// import { serverService } from "../../services/client-server.service"
+
 /*******************************************************************************************/
 
 export function loadVolunteers(email = null) {
@@ -92,6 +94,10 @@ function filterVolunteersByStatus(status, volunteers) {
  * if volunteer has id, we know it is an update request,
  * else it is post. */
 export function saveVolunteer(volunteerToSave, user) {
+  // console.log('saveVolunteersaveVolunteersaveVolunteer');
+  // console.log(volunteerToSave);
+  // console.log(volunteerToSave._id);
+  // console.log(user);
   return async (dispatch) => {
     try {
       const type = volunteerToSave._id ? 'UPDATE_VOLUNTEER' : 'ADD_VOLUNTEER';
@@ -102,7 +108,7 @@ export function saveVolunteer(volunteerToSave, user) {
       } else {
         volunteerToSave = await volunteerService.saveVolunteer(volunteerToSave);
       }
-
+      
       dispatch({ type, volunteer: volunteerToSave });
       return updatedVolunteer;
     } catch (err) {
@@ -122,3 +128,11 @@ export function removeVolunteer(volunteerId) {
     }
   };
 }
+
+// export function setFilter(newFilters) {
+//   return (dispatch, getState) => {
+//     const { volunteers } = getState().volunteerReducer;
+//     const filteredVolunteers = volunteers; //volunteers.filter.....
+//     dispatch({ type: "SET_AND_FILTER", newFilters, filteredVolunteers });
+//   }
+// }

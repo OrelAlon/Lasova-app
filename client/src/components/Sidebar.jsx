@@ -7,7 +7,7 @@ import { useSelector } from 'react-redux';
 const Sidebar = () => {
   const { isAuthenticated, user } = useSelector((state) => state.authReducer);
   const currLocation = useLocation().pathname;
-  console.log('currLocation:', currLocation);
+  // console.log('currLocation:', currLocation);
 
   const links = [
     // { title: "דשבורד", destination: "/dashboard" },

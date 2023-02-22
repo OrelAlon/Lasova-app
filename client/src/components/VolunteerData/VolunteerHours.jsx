@@ -19,22 +19,22 @@ function VolunteerHours(info) {
           </div>
         </div>
 
-        <br/>
+        {/* <br/> */}
        
         <div className='innerContainer'>
           <input type='button' value='הוסף שעות'/>
         </div>
 
-        <br/>
+        {/* <br/> */}
 
         <div className='innerContainer'>
           <ApproveHours data={info} handleTotalHours={value=>handleTotalHours(value)} />
           
         </div>
-        <br/>
+        {/* <br/> */}
 
-        <div className='innerContainer'>
-          סהכ שעות: {totalApproveHours}
+        <div className='total-hours-container'>
+          <strong> סה"כ </strong>  {totalApproveHours} שעות
         </div>
         
     </div>

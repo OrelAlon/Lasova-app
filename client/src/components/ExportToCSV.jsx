@@ -3,16 +3,16 @@ import { ExportToCsv } from 'export-to-csv';
 const  ExportToCSV=(reportData,  fileTitle)=>
 {
   
-    let d = new Date();
+    let d=new Date()
+    
     let dateFormat = `${d.getDay()}${d.getMonth()}${d.getFullYear()}`;
-    let timeFormat = `${d.getHours()}${d.getMinutes()}${d.getSeconds()}`;
+    let timeFormat = `${d.getHours()}${d.getMinutes()}`;
 
-    let name= fileTitle+ "_" + dateFormat +"_"+ timeFormat ;
- 
-          
+    console.log('timeFormat',timeFormat)
+    let file_Name= 'Lasova'+ "_" + dateFormat +"_"+ timeFormat ;
 
           const options = { 
-            filename: name,
+            filename: file_Name,
             fieldSeparator: ',',
             quoteStrings: '"',
             decimalSeparator: '.',

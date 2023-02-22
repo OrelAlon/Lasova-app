@@ -1,163 +1,167 @@
 .volunteer-report {
-  margin-top: 15px !important;
+  margin-top:15px !important;
   //border-radius: 10px;
   display: flex;
   justify-content: center;
-  width: 390px;
+  width:390px;
   //height: 100vh;
   margin: auto;
   font-family: Rubik-Regular;
 
   .logo-img {
-    height: 224px;
-    width: 326px;
-    position: absolute;
-    top: 1%;
-
-    .logo-mobile {
-      width: 100%;
+      height: 224px;
+      width: 326px;
       position: absolute;
-      left: 8%;
-      // object-fit: cover;
-    }
+      top: 1%;
+  
+      .logo-mobile {
+          width:100%;
+          position: absolute;
+          left: 8%;
+         // object-fit: cover;
+
+      }
   }
 
   .header {
-    font-size: 24px;
-    font-family: Rubik-Bold;
-    line-height: 28.44px;
-    color: #2a526f;
-    padding-top: 70px;
-    position: absolute;
-    top: 30%;
+      font-size:24px;
+      font-family: Rubik-Bold;
+      line-height: 28.44px;
+      color:#2A526F;
+      padding-top: 70px;
+      position: absolute;
+      top: 30%;
   }
 
   .report-form {
-    position: absolute;
-    bottom: 0%;
-    background-color: #edf7fd;
-    border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
-    height: 47%;
-    width: inherit;
-    display: flex;
-    justify-content: center;
-
-    .report-program {
-      margin-top: 20px;
-      font-family: Rubik-Regular;
-      color: #d77804;
-    }
-
-    .report-btn {
-      border-radius: 50%;
-      background-color: #92ce7f;
-      width: 136px;
-      height: 136px;
-      align-self: center;
-      color: white;
-      font-family: Rubik-Bold;
-      font-size: 24px;
       position: absolute;
-      top: 21%;
-    }
+      bottom: 0%;
+      background-color:#EDF7FD;
+      border-top-left-radius: 40px;
+      border-top-right-radius: 40px;
+      height: 47%;
+      width: inherit;
+      display: flex;
+      justify-content: center;
 
-    .btn-icon:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-    }
-    .btn-icon:hover::after {
-      transform: scaleX(1.4) scaleY(1.6);
-      opacity: 0;
-    }
+      .report-program{
+          margin-top: 20px;
+          font-family: Rubik-Regular;
+          color: #D77804;
+      }
 
-    .report-text {
-      color: #2a526f;
+      .report-btn {
+          border-radius: 50%;
+          background-color: #92CE7F;
+          width:136px;
+          height: 136px;
+          align-self: center;
+          color:white;
+          font-family: Rubik-Bold;
+          font-size: 24px;
+          position: absolute;
+          top: 21%;
+      }
+
+      .bton-icon:hover {
+          transform: translateY(-3px);
+          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+      .bton-icon:hover::after {
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0; }
+
+      
+
+      .report-text {
+      color:#2A526F;
       font-size: 12px;
       position: absolute;
       bottom: 30%;
-    }
-
-    #timepicker:before {
-      // content: 'Time:';
-      margin-right: 0.6em;
-      color: #9d9d9d;
-    }
-
-    .confirm-btn {
-      width: 85%;
-      height: 50px;
-      background-color: #d77804;
-      color: #f6fbfe;
-      position: absolute;
-      top: 64.6%;
-      border-radius: 8px;
-      font-family: Rubik-Bold;
-      font-size: 24px;
-    }
-
-    .confirm_cancel_addtime {
-      display: flex;
-      gap: 20px;
-      position: absolute;
-      top: 64.6%;
-    }
-
-    .back-btn {
-      width: 120px;
-      height: 50px;
-      padding: 10px;
-      background-color: #d77804;
-      color: #f6fbfe;
-      border-radius: 8px;
-      font-family: Rubik-Bold;
-      font-size: 24px;
-      line-height: 1.1em;
-      text-align: center;
-    }
-    .hours {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      width: 80%;
-      position: absolute;
-      top: 43%;
-      right: 10%;
-      font-size: 16px;
-      color: #386c92;
-
-      .start-hour-text {
-        color: #92ce7f;
-        font-weight: 700;
-        line-height: 23px;
       }
-      .end-hour-text {
-        color: #c87575;
-        font-weight: 700;
-        line-height: 23px;
-      }
-    }
 
-    input {
-      height: 32px;
-      width: 148px;
-      border: none;
-      border-radius: 4px;
-      font-size: 16px;
-      font-family: 'Rubik-Regular';
-      color: #386c92;
-    }
-    .input-date {
-      display: flex;
-      flex-direction: column;
-      position: absolute;
-      top: 23.5%;
-      right: 10%;
-      gap: 4px;
-      font-size: 16px;
-      color: #386c92;
-    }
+      #timepicker:before {
+          // content: 'Time:';
+          margin-right: .6em;
+          color: #9d9d9d;
+       }
+
+       
+      .confirm-btn {
+          width: 85%;
+          height: 50px;
+          background-color: #D77804;
+          color: #F6FBFE;
+          position:absolute;
+          top: 64.6%;
+          border-radius: 8px;
+          font-family: Rubik-Bold;
+          font-size: 24px;
+      }
+
+      .confirm_cancel_addtime{
+          display: flex;
+          gap:20px;
+          position:absolute;
+          top: 64.6%;
+       }
+
+      .back-btn{
+          width:120px;
+          height: 50px;
+          padding: 10px;
+          background-color: #D77804;
+          color: #F6FBFE;
+          border-radius: 8px;
+          font-family: Rubik-Bold;
+          font-size: 24px;
+          line-height:1.1em;
+          text-align:center;
+      }
+      .hours {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          width: 80%;
+          position: absolute;
+          top: 43%;
+          right: 10%;
+          font-size: 16px;
+          color: #386C92;
+
+          .start-hour-text {
+              color: #92CE7F;
+              font-weight: 700;
+              line-height: 23px;
+          }
+          .end-hour-text {
+              color: #C87575;
+              font-weight: 700;
+              line-height: 23px;
+          }
+      }
+
+      input {
+          height:32px;
+          width: 148px;
+          border:none;
+          border-radius: 4px;
+          font-size: 16px;
+          font-family: "Rubik-Regular";
+          color: #386C92;
+      }
+      .input-date {
+          display: flex;
+          flex-direction: column;
+          position:absolute;
+          top:23.5%;
+          right: 10%;
+          gap: 4px;
+          font-size: 16px;
+          color: #386C92;
+      }
   }
+
+
 }
 
 .volunteer-user {
@@ -166,3 +170,5 @@
   width: inherit;
   margin: auto;
 }
+
+  

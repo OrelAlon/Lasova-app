@@ -14,31 +14,42 @@ function GeneralData(props) {
         
         <div className='inner'>
           <div className='col_inner'>
-            <div>מייל</div>
-            <div>{volunteer.email}</div>
+            <div className='col-lable'>מייל</div>
+            <div className='col-data'>{volunteer.email}</div>
 
             <br/>
-            <div>עיר</div>
-            <div>{volunteer.city}</div>
+            <div className='col-lable'>כתובת</div>
+            <div className='col-data'>{volunteer.address}, {volunteer.city}</div>
+
+            <br/>
+            <div className='col-lable'>מקום לימודים</div>
+            <div className='col-data'>{volunteer.educationalInstitution}</div>
+
+
           </div>
 
           <div className='col_inner'>
-          <div>טלפון</div>
-            <div>{volunteer.cellphone}</div>
+            <div className='col-lable'>טלפון</div>
+            <div className='col-data'>{volunteer.cellphone}</div>
 
             <br/>
-            <div>תאריך לידה</div>
-            <div>{formattedDate}</div>
+            <div className='col-lable'>תאריך לידה</div>
+            <div className='col-data'>{formattedDate}</div>
+
+            <br/>
+            <div className='col-lable'>שם מלגה</div>
+            <div className='col-data'>{volunteer.scholarshipName}</div>
           </div>
-
-
         </div>
-        
+      
+           
+        {/* <br/>
+            <div className='col-lable'> סיכום שיחה</div>
+            <div className='col-data'>{volunteer.talkSummary}</div> */}
 
+ 
 
-
-
-      </div>
+    </div>
     
     
 
